@@ -1,0 +1,6 @@
+{
+  "dateLibrary": "java8",
+  "modelPackage": "no.tripletex.v2.model",
+  "apiPackage": "no.tripletex.v2.api",
+  "invokerPackage": "no.tripletex.v2"
+}

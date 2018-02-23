@@ -1,5 +1,9 @@
+plugins {
+    id 'de.undercouch.download'         version '3.3.0'
+}
+
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.5.1'
+    gradleVersion = '4.4.1'
     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
 }
 
@@ -14,5 +18,6 @@ allprojects {
 
     repositories {
         mavenCentral()
+        jcenter()
     }
 }

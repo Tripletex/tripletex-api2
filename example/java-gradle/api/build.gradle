@@ -1,0 +1,43 @@
+// https://github.com/int128/gradle-swagger-generator-plugin
+// https://github.com/michel-kraemer/gradle-download-task
+plugins {
+    id 'java'
+    id 'org.hidetake.swagger.generator' version '2.9.0'
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+
+    swaggerCodegen 'io.swagger:swagger-codegen-cli:2.2.3'
+
+    compile 'io.swagger:swagger-annotations:1.5.15'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.okhttp:logging-interceptor:2.7.5'
+    compile 'com.google.code.gson:gson:2.8.1'
+}
+
+task downloadTripletexSwaggerFile {
+    doLast {
+        download {
+            src 'https://tripletex.no/v2/swagger.json'
+            dest "$buildDir/swagger.json"
+        }
+    }
+}
+
+swaggerSources {
+    tripletex {
+        inputFile = file("$buildDir/swagger.json")
+        code {
+            language = 'java'
+            configFile = file('config.json')
+            components = [apiTests: false]
+        }
+    }
+}
+
+// Configure compile task dependency and source
+generateSwaggerCodeTripletex.dependsOn downloadTripletexSwaggerFile
+compileJava.dependsOn swaggerSources.tripletex.code
+sourceSets.main.java.srcDir "${swaggerSources.tripletex.code.outputDir}/src/main/java"
+sourceSets.main.resources.srcDir "${swaggerSources.tripletex.code.outputDir}/src/main/resources"

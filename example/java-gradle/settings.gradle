@@ -1,3 +1,4 @@
 rootProject.name = 'java-gradle'
 
 include 'api'
+include 'order'
