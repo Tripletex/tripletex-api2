@@ -10,4 +10,5 @@
 
 ## Code examples
 
-Coming very soon!
+* [java-gradle](example/java-gradle/README.md)
+* [Order](example/java-gradle/order/README.md)
