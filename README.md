@@ -10,5 +10,5 @@
 
 ## Code examples
 
-* [java-gradle](example/java-gradle/README.md)
-* [Order](example/java-gradle/order/README.md)
+* [Java (swagger code-gen)](example/java-gradle/README.md)
+  * [/v2/order](example/java-gradle/order/README.md)
