@@ -3,5 +3,7 @@ apply plugin: 'java'
 dependencies {
     compile project(':api')
 
-    compile group: 'org.slf4j',                     name: 'slf4j-api',              version: '1.7.22'
+    compile group: 'org.slf4j',                name: 'slf4j-api',        version: '1.7.22'
+
+    runtime group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version:'2.10.0'
 }
