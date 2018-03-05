@@ -1,21 +1,22 @@
 # java-gradle
+
 A Java based example with Gradle as its build system.
 
 ## Parts
 
-* [api](api/README.md)
-* [order](order/README.md)
+* [api](api)
+* [order](order)
 
 ## Setup
 
 ### Manual
 
-``./gradlew build``
+`./gradlew build`
 
 ### Intellij
 
-``./gradlew idea``
+`./gradlew idea`
 
 ### Eclipse
 
-``./gradlew eclipse``
+`./gradlew eclipse`
