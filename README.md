@@ -10,5 +10,5 @@
 
 ## Code examples
 
-* [Java (swagger code-gen)](example/java-gradle)
-  * [Order use-case](example/java-gradle/order)
+* [Java (swagger code-gen)](examples/java-gradle)
+  * [Order use-case](examples/java-gradle/order)
