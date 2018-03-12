@@ -10,5 +10,6 @@
 
 ## Code examples
 
+* [Bash (shell script)](examples/bash)
 * [Java (swagger code-gen)](examples/java-gradle)
   * [Order use-case](examples/java-gradle/order)
