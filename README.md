@@ -11,5 +11,6 @@
 ## Code examples
 
 * [Bash (shell script)](examples/bash)
+  * [Simple authentication use-case](examples/bash/authentication/example.sh)
 * [Java (swagger code-gen)](examples/java-gradle)
   * [Order use-case](examples/java-gradle/order)
