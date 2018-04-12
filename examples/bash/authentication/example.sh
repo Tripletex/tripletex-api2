@@ -10,9 +10,9 @@ consumerToken="*** CHANGE ME ***"
 # End-user secret generated for our integration
 employeeToken="*** CHANGE ME ***"
 
-# Used to perform API requests on behalf of other employees (e.g. accountant access)
-# Default value "0" is used to act as yourself
-proxyEmployeeId=0
+# Used to perform API requests in a different company context (e.g. accountant access)
+# Default value "0" is used to act as your primary company
+proxyCompanyId=0
 
 # Session token expiration date
 sessionExpirationDate="2019-01-01"
@@ -44,8 +44,8 @@ echo "Session token generated: $sessionToken"
 
 # Set up basic authentication value
 # Basic auth is done by base64-encoding the username and password, separated by ":", i.e. "username:password"
-# In our case, the username is our proxyEmployeeId (or 0), and the password is our sessionToken
-authUsername="$proxyEmployeeId"
+# In our case, the username is our proxyCompanyId (or 0), and the password is our sessionToken
+authUsername="$proxyCompanyId"
 authPassword="$sessionToken"
 basicAuthToken=$(echo -n "$authUsername:$authPassword" | base64)
 
