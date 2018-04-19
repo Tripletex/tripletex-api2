@@ -28,11 +28,11 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 > "*fields*" is an optional parameter, and follows the same format as in API2.
 If you made a call to **GET /v2/customer/{ID}** with a *fields* parameter, you can use the **same fields** to get the same response from a subscription to **customer.\***.
 
-### Synking
-If you set up a subscription, give it a few seconds to propagate to all servers, and then synk up all data from ex: GET /v2/customer. 
+### Syncing
+If you set up a subscription, give it a few seconds to propagate to all servers, and then sync up all data from ex: GET /v2/customer. 
 
-> Remember to **check the version** number of objects loaded through bulk synk and webhooks.
-> For now we recommend having a **nightly synk** to make sure everything is loaded.
+> Remember to **check the version** number of objects loaded through bulk sync and webhooks.
+> For now we recommend having a **nightly sync** to make sure everything is loaded.
 > Note that if an object is modified several times in rapid succession, the webhook system might skip over a version number or two, but sends over the latest version.
 
 ## WebHook format
