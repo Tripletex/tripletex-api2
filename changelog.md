@@ -1,4 +1,6 @@
 # API changelog
+25.04.2018 (versjon 2.10.1): Nytt endepunkt på travelExpense: copy. Validering skjer nå kun når reiseregning leveres (kan opprettes tom).
+
 19.04.2018 (versjon 2.10.0): Nye endepunkter på prosjekt: put, post og delete samt litt feilretting.
 
 14.03.2018 (versjon 2.8.0): Nye endepunkter: put for ledger/voucher, put for ledger/voucher{id}, delete for ledger/account.
