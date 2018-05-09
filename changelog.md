@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.11.0 (2018-05-09)
+
+* Added beta version of [webhooks](examples/webhook) for pilot users
+	* Exposes new endpoints for `GET /event` and `GET/POST/PUT/DELETE /event/subscription`
+	* Contact us to join the pilot program!
+
 ## 2.10.1 (2018-04-25)
 
 * Added endpoint `PUT /travelExpense/:copy`
