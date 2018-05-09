@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.11.1 (2018-05-09)
+
+* Added validation of addresses to `PUT /address/`
+	* Empty addresses are not allowed.
+	* Either Address.name or Address.customerVendorId is now required.
+
 ## 2.11.0 (2018-05-09)
 
 * Added beta version of [webhooks](examples/webhook) for pilot users
