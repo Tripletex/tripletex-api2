@@ -6,14 +6,20 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 
 ## List currently available events
 
-	curl -X GET --header 'Accept: application/json' --header 'Authorization: Basic <your authenticatin>' 'https://tripletex.no/v2/event'
+	curl -X GET --header 'Accept: application/json' --header 'Authorization: Basic <token>' 'https://tripletex.no/v2/event'
 
-> Events are created in the format **"object.verb"**, and may include additional verbs then *create, update, delete*.
+> Events are created in the format **"object.verb"**, and may include additional verbs other than *create, update, delete*. Webhook events will include an optional `payloadModel`, referencing the swagger model being sent. Events of type *delete* only include the object ID, and not the object itself.
 
-    {
+        {
 	    "value": {
-		    "customer.create": "Description",
-		    "invoice.delete": "Description"
+		    "product.create": {
+		        "description": "Product created",
+			"payloadModel": "Product"
+			
+		    },
+		    "order.delete": {
+		        "description": "Order deleted"
+		    }
 		}
 	}
 
@@ -21,15 +27,15 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 	POST https://tripletex.no/v2/event/subscription
 >
 	{
-		"event": "customer.create",
-		"target": "https://your.receiver",
+		"event": "product.create",
+		"targetUrl": "https://your.receiver",
 		"fields": "optional; fields from the triggering object to send"
 	}
 > "*fields*" is an optional parameter, and follows the same format as in API2.
-If you made a call to **GET /v2/customer/{ID}** with a *fields* parameter, you can use the **same fields** to get the same response from a subscription to **customer.\***.
+If you made a call to **GET /v2/product/{ID}** with a *fields* parameter, you can use the **same fields** to get the same response from a subscription to **product.\***.
 
 ### Syncing
-If you set up a subscription, give it a few seconds to propagate to all servers, and then sync up all data from ex: GET /v2/customer. 
+If you set up a subscription, give it a few seconds to propagate to all servers, and then sync up all data from e.g. GET /v2/product. 
 
 > Remember to **check the version** number of objects loaded through bulk sync and webhooks.
 > For now we recommend having a **nightly sync** to make sure everything is loaded.
@@ -57,11 +63,11 @@ If you set up a subscription, give it a few seconds to propagate to all servers,
 				"id": 1,
 				"version": 0, // Simply shows how many times this record has been modified (using PUT)
 				"url": "https://tripletex.no/v2/event/subscription/1",
-				"event": "project.create",
+				"event": "product.create",
 				"targetUrl": "http://webhook.target.io/foo",
-				"fields": "",
+				"fields": "*,currency(*)",
 				"status": "ACTIVE"
 			}
 		]
 	}
-> In the future, the **status** can be set to **ACTIVE**, **DISABLED**'.  But the system might also set a subscription's status to ex: **DISABLED_TOO_MANY_ERRORS**.
+> In the future, the **status** can be set to **ACTIVE**, **DISABLED**'. But the system might also set a subscription's status to a more descriptive value, e.g. **DISABLED_TOO_MANY_ERRORS**.
