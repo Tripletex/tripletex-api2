@@ -1,6 +1,6 @@
 # API changelog
 
-## 2.12.1 (2018-05-25)
+## 2.12.0 (2018-05-25)
 
 * Added endpoints for payment types for outgoing payments:
 * `GET /ledger/paymentTypeOut`
