@@ -3,13 +3,13 @@
 ## 2.12.0 (2018-05-25)
 
 * Added endpoints for payment types for outgoing payments:
-* `GET /ledger/paymentTypeOut`
-* `POST /ledger/paymentTypeOut`
-* `POST /ledger/paymentTypeOut/list`
-* `PUT /ledger/paymentTypeOut/list`
-* `DELETE /ledger/paymentTypeOut/{id}`
-* `GET /ledger/paymentTypeOut/{id}`
-* `PUT /ledger/paymentTypeOut/{id}`
+  * `GET /ledger/paymentTypeOut`
+  * `POST /ledger/paymentTypeOut`
+  * `POST /ledger/paymentTypeOut/list`
+  * `PUT /ledger/paymentTypeOut/list`
+  * `DELETE /ledger/paymentTypeOut/{id}`
+  * `GET /ledger/paymentTypeOut/{id}`
+  * `PUT /ledger/paymentTypeOut/{id}`
 
 ## 2.11.1 (2018-05-09)
 
