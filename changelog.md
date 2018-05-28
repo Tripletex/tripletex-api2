@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.12.2 (2018-05-28)
+
+* Added endpoint `ledger/voucher/>nonPosted`
+
 ## 2.12.1 (2018-05-28)
 
 * Changed endpoint `/supplier`
