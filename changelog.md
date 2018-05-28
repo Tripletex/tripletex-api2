@@ -1,6 +1,11 @@
 # API changelog
 
-## 2.12.0 (2018-05-25)
+## 2.12.1 (2018-05-28)
+
+* Changed endpoint `/supplier`
+	* Introduced filter parameter `changedSince`, to only list suppliers changed after a given timestamp
+
+## 2.12.0 (2018-05-28)
 
 * Added endpoints for payment types for outgoing payments:
   * `GET /ledger/paymentTypeOut`
