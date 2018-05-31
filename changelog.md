@@ -20,6 +20,10 @@
   * `GET /ledger/paymentTypeOut/{id}`
   * `PUT /ledger/paymentTypeOut/{id}`
 
+## 2.11.2 (2018-05-24)
+  * Changed `GET /travelExpense`
+	* added queryparameter **state** with the posilble values *ALL*, *OPEN*, *DELIVERED*, *APPROVED*, *SALARY_PAID* (default value *ALL*)
+
 ## 2.11.1 (2018-05-09)
 
 * Added validation of addresses to `PUT /address/`
