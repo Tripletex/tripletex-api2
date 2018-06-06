@@ -7,13 +7,13 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 ## List currently available events
 
 **The list of subscribable events is currently limited to a select few, but we are very happy to expand based on use-cases. The current list of events includes:**
-* Invoice charged
-* Order created
-* Order updated
-* Order deleted
-* Product created
-* Product updated
-* Product deleted
+* Invoice charged: `invoice.charged`
+* Order created: `order.create`
+* Order updated: `order.update`
+* Order deleted: `order.delete`
+* Product created: `product.create`
+* Product updated: `product.update`
+* Product deleted: `product.delete`
 * Let us know if you have any suggestions!
 
 
