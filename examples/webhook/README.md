@@ -6,6 +6,19 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 
 ## List currently available events
 
+**The list of subscribable events is currently limited to a select few, but we are very happy to expand based on use-cases. The current list of events includes:**
+* Invoice charged
+* Order created
+* Order updated
+* Order deleted
+* Product created
+* Product updated
+* Product deleted
+* Let us know if you have any suggestions!
+
+
+It is also possible to see supported events from the API:
+
 	curl -X GET --header 'Accept: application/json' --header 'Authorization: Basic <token>' 'https://tripletex.no/v2/event'
 
 > Events are created in the format **"object.verb"**, and may include additional verbs other than *create, update, delete*. Webhook events will include an optional `payloadModel`, referencing the swagger model being sent. Events of type *delete* only include the object ID, and not the object itself.
