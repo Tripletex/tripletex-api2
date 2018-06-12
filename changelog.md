@@ -1,5 +1,14 @@
 # API changelog
 
+## 2.13.1 (2018-06-12)
+
+* Added webhook support for Voucher events:
+	* `voucher.create`
+	* `voucher.update`
+	* `voucher.delete`
+* Changed endpoint `/timesheet/entry`
+	* Added read-only field to TimesheetEntry: `chargeableHours`
+
 ## 2.12.2 (2018-05-28)
 
 * Added endpoint `ledger/voucher/>nonPosted`
