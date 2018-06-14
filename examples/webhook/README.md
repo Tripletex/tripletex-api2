@@ -14,6 +14,9 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 * Product created: `product.create`
 * Product updated: `product.update`
 * Product deleted: `product.delete`
+* Voucher created: `voucher.create`
+* Voucher updated: `voucher.update` (also triggered when changing the voucher's postings!)
+* Voucher deleted: `voucher.delete`
 * Let us know if you have any suggestions!
 
 
