@@ -29,3 +29,25 @@ The order object can be set to either accept orderlines including VAT or excludi
 
 Example:
 if order is set to isPrioritizeAmountsIncludingVat = true then you should provide orderlines with only amountIncludingVatCurrency and/or unitPriceIncludingVatCurrency.
+
+
+### How can I find payment information for specific invoices via the API?
+
+### Answer:
+
+We are going to expand this with a new endpoint but in the meantime this method should work:
+
+
+- find Invoice.customerId and invoice.number
+- get all postings where customerId = Invoice.customerId
+- locally find where invoiceNumber = invoice.number
+- if any has closegroupId, then everything is paid or credited in full
+- but you can sum all posts where invoiceNumber = invoice.number (betalinger) 
+- and if you have a closegroupId, you will have to get other postings with closegroupId to find related creditnotes
+
+
+### Can I get hidden fields for our internal ID's or other information?
+
+### Answer:
+
+We inherently do not wish to support fields for this, we recommend that you instead save our ID's for your system and make the relation that way if possible.
