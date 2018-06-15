@@ -3,8 +3,8 @@
 # 2.13.2 (2018-06-15)
 
 * Updated handling of JSON parse errors
-	* Errors deserializaing input JSON now results in [HTTP error 422](https://http.cat/422) instead of [500](https://http.cat/500)
-	* Mapping errors are now specified instead of the generic error message `Invalid json`
+	* Errors deserializing input JSON now results in [HTTP error 422](https://http.cat/422) instead of [500](https://http.cat/500)
+	* Mapping errors are now specified instead of the generic message `Invalid json`
 
 ## 2.13.1 (2018-06-12)
 
