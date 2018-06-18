@@ -4,7 +4,7 @@
 * `GET /employee`
 	* Added **allowInformationRegistration** as a query parameter and as a read-only field. This parameter determines if salary information can be registered on the user including hours, travel expenses and employee expenses. The user may also be selected as a project member on projects.
 
-# 2.13.2 (2018-06-15)
+## 2.13.2 (2018-06-15)
 
 * Updated handling of JSON parse errors
 	* Errors deserializing input JSON now results in [HTTP error 422](https://http.cat/422) instead of [500](https://http.cat/500)
