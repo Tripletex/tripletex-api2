@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.14.0 (2018-06-19)
+
+* Added endpoint `ledger/voucher/{id}/:sendToInbox`
+
 ## 2.13.3 (2018-06-18)
 * `GET /employee`
 	* Added **allowInformationRegistration** as a query parameter and as a read-only field. This parameter determines if salary information can be registered on the user including hours, travel expenses and employee expenses. The user may also be selected as a project member on projects.
