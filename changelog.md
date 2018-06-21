@@ -1,5 +1,18 @@
 # API changelog
 
+## 2.14.1 (2018-06-21)
+
+* Added webhook support for Customer, Supplier and Project:
+	* `customer.create`
+	* `customer.update`
+	* `customer.delete`
+	* `supplier.create`
+	* `supplier.update`
+	* `supplier.delete`
+	* `project.create`
+	* `project.update`
+	* `project.delete`
+
 ## 2.14.0 (2018-06-19)
 
 * Added endpoint `ledger/voucher/{id}/:sendToInbox`
