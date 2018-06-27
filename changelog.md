@@ -2,7 +2,7 @@
 
 ## 2.14.2 (2018-06-27)
 
-* Added fields "externalAccountsNumber', 'description' (readonly) and `mainProject` (readonly) to Project.
+* Added fields "externalAccountsNumber', 'description' (readonly) and 'mainProject' (readonly) to Project.
 
 ## 2.14.1 (2018-06-21)
 
