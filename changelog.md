@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.15.0 (2018-06-29)
+
+* Added support of bank reconciliation.
+* Added endpoint `bank/statement` for importing bank statements.
+* Added endpoint `bank/reconciliation/`for reconciliation. Reconciliation can be done either with a bank statement, or without.
+* Added endpoint `bank/reconciliation/match` for mapping postings to transactions on the bank statement.
+* Added endpoint `bank/` for getting banks that are supported, their register numbers and the bank statement file formats that can be imported.
+
 ## 2.14.2 (2018-06-27)
 
 * Added fields `externalAccountsNumber`, `description` (readonly) and `mainProject` (readonly) to Project.
