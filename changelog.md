@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.15.0 (2018-07-04)
+
+* Added field `reverseVoucher` to Voucher - a reference to the voucher that is produced when the current voucher is reversed.
+
 ## 2.15.0 (2018-06-29)
 
 * Added support of bank reconciliation.
