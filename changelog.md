@@ -3,7 +3,7 @@
 ## 2.15.1 (2018-07-04)
 
 * Added field `reverseVoucher` to Voucher - a reference to the voucher that is produced when the current voucher is reversed.
-* Added fields `vacationAllowanceAmount`, `grossAmount`, `amount` to Salary.Payslip.
+* Added fields `vacationAllowanceAmount` (readonly), `grossAmount` (readonly), `amount` (readonly) to Salary.Payslip.
 * Added field `amount` to Salary.Specification.
 
 ## 2.15.0 (2018-06-29)
