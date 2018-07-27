@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.15.2 (2018-07-27)
+
+* Distinguished payment type in travelExpense API between costCategory and paymentType. new GET endpoints for travelExpense/costCategory and travelExpense/paymentType. It is now possible to actually obtain these for use with travelExpense/cost.
+
 ## 2.15.1 (2018-07-04)
 
 * Added field `reverseVoucher` to Voucher - a reference to the voucher that is produced when the current voucher is reversed.
