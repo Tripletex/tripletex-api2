@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.16.0 (2018-08-02)
+* `POST /ledger/voucher/importDocument` [BETA] Upload a document to create one or more vouchers. Valid document formats are PDF, PNG, JPEG, TIFF and EHF.
+
 ## 2.15.2 (2018-07-27)
 
 * Distinguished payment type in travelExpense API between costCategory and paymentType. new GET endpoints for travelExpense/costCategory and travelExpense/paymentType. It is now possible to actually obtain these for use with travelExpense/cost. (This is a "breaking" change for travelExpense/cost, but also makes it usable.)
