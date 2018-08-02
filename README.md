@@ -2,10 +2,11 @@
 
 ## Resources
 
-* [About API 2.0](https://www.tripletex.no/tripletex-api-2-0/)
+
+* [Swagger API documentation](https://tripletex.no/v2-docs/) (Always up-to-date!)
 * [Changelog](changelog.md)
-* [Swagger documentation](https://tripletex.no/v2-docs/)
 * [Frequently asked questions](FAQ.md)
+* [About API 2.0](https://www.tripletex.no/tripletex-api-2-0/)
 * [Workplace API group](https://work-38068477.facebook.com/groups/573087313026175/) (open for everyone, [request an invitation here](https://fb.me/g/2CQfbFXop/x3dcnW5K))
 
 ## Code examples
