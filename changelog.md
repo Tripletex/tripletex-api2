@@ -2,7 +2,7 @@
 
 ## 2.16.1 (2018-08-02)
 
-* Fixed inorrect URL references to costCategory and paymentType from `travelExpense/cost`.
+* Fixed incorrect URL references to costCategory and paymentType from `travelExpense/cost`.
 
 ## 2.16.0 (2018-08-02)
 * `POST /ledger/voucher/importDocument` [BETA] Upload a document to create one or more vouchers. Valid document formats are PDF, PNG, JPEG, TIFF and EHF.
