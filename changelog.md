@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.16.2 (2018-08-13)
+
+* Added the possibility to create prepaid invoices. The parameters `paymentTypeId` og `paidAmount` have been added to the PUT /order/{id}/:invoice and POST /invoice API endpoints. These parameters are optional, but both must be provided if a prepaid invoice should be created.
+
 ## 2.16.1 (2018-08-02)
 
 * Fixed incorrect URL references to costCategory and paymentType from `travelExpense/cost`.
