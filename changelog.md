@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.17.0 (2018-08-16)
+
+* `/customer` (PUT and POST): `accountManager` is no longer read-only.
+
 ## 2.16.2 (2018-08-13)
 
 * Added the possibility to create prepaid invoices. The parameters `paymentTypeId` og `paidAmount` have been added to the PUT /order/{id}/:invoice and POST /invoice API endpoints. These parameters are optional, but both must be provided if a prepaid invoice should be created.
