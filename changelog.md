@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.17.1 (2018-08-17)
+
+* Added support for `organizationNumber` query parameter in `/customer` (GET) and `/supplier` (GET).
+
 ## 2.17.0 (2018-08-16)
 
 * `/customer` (PUT and POST): `accountManager` is no longer read-only.
