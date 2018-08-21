@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.18.0 (2018-08-21)
+
+* Added information about outstanding payment and payment reminders to invoices: postings, reminders, sumRemits, amountOutstanding og amountOutstandingTotal.
+* Added a /reminder API endpoint and :createReminder to the invoice API endpoint.
+
 ## 2.17.1 (2018-08-17)
 
 * Added support for `organizationNumber` query parameter in `/customer` (GET) and `/supplier` (GET).
