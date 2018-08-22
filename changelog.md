@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.19.0 (2018-08-22)
+
+* New endpoint: `PUT /ledger/voucher/list` - Update multiple vouchers.
+* `Voucher.year` is now correctly defined as read-only.
+
 ## 2.18.0 (2018-08-21)
 
 * Added information about outstanding payment and payment reminders to invoices: `postings`, `reminders`, `sumRemits`, `amountOutstanding` og `amountOutstandingTotal`.
