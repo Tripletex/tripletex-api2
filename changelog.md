@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.20.0 (2018-08-23)
+* `POST /ledger/voucher/importDocument` now supports an optional description that will be used on the new voucher(s).
+
 ## 2.19.0 (2018-08-22)
 
 * New endpoint: `PUT /ledger/voucher/list` - Update multiple vouchers.
