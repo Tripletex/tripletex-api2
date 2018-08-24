@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.20.1 (2018-08-24)
+* `DELETE /ledger/voucher` added.
+* `GET /inventory` with query parameter isMainInventory now works as intended.
+
 ## 2.20.0 (2018-08-23)
 * `POST /ledger/voucher/importDocument` now supports an optional description that will be used on the new voucher(s).
 
