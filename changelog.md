@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.21.1 (2018-08-31)
+* `PUT /invoice/{id}/:createCreditNote` added for creating credit notes.
+
 ## 2.20.1 (2018-08-24)
 * `DELETE /ledger/voucher` added.
 * `GET /inventory` with query parameter isMainInventory now works as intended.
