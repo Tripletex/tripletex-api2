@@ -2,6 +2,7 @@
 
 ## 2.21.1 (2018-08-31)
 * `PUT /invoice/{id}/:createCreditNote` added for creating credit notes.
+* AmountRoundoff og amountRoundoffCurrency added to Invoice.
 
 ## 2.20.1 (2018-08-24)
 * `DELETE /ledger/voucher` added.
