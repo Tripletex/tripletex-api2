@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.21.2 (2018-09-05)
+* Changed Swagger documentation to correctly specify return code `201` rather than `200` for `POST` requests.
+
 ## 2.21.1 (2018-08-31)
 * `PUT /invoice/{id}/:createCreditNote` added for creating credit notes.
 * AmountRoundoff og amountRoundoffCurrency added to Invoice.
