@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.21.3 (2018-09-6)
+* `GET /contact` added phoneNumberMobile.
+
 ## 2.21.2 (2018-09-05)
 * Changed Swagger documentation to correctly specify return code `201` rather than `200` for `POST` requests.
 
