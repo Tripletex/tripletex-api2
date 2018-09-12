@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.21.4 (2018-09-12)
+* `PUT /project` allow PUT on non-internal projects.
+
 ## 2.21.3 (2018-09-6)
 * `GET /contact` added phoneNumberMobile.
 
