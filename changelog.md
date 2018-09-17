@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.22.0 (2018-09-17)
+* `POST /salary/transaction` new boolean parameter for generating tax deduction.
+* `GET/POST/PUT/DELETE /project/orderline` new BETA endpoints for selected participants only.
+
 ## 2.21.4 (2018-09-12)
 * `PUT /project` allow PUT on non-internal projects.
 
