@@ -1,4 +1,4 @@
-#!/bin/Bash
+#!/bin/bash
 
 # Example authentication process for Tripletex API
 
@@ -9,6 +9,12 @@ consumerToken="*** CHANGE ME ***"
 
 # End-user secret generated for our integration
 employeeToken="*** CHANGE ME ***"
+
+# API host
+apiHost="https://tripletex.no"
+
+# Uncomment the line below if you are using the integration environment
+# apiHost="https://api.tripletex.io"
 
 # Used to perform API requests in a different company context (e.g. accountant access)
 # Default value "0" is used to act as your primary company
@@ -25,7 +31,7 @@ fi
 
 # Generate new session token based on consumerToken and employeeToken
 authResponse=$(
-  curl "https://tripletex.no/v2/token/session/:create?consumerToken=$consumerToken&employeeToken=$employeeToken&expirationDate=$sessionExpirationDate" \
+  curl "$apiHost/v2/token/session/:create?consumerToken=$consumerToken&employeeToken=$employeeToken&expirationDate=$sessionExpirationDate" \
     --request PUT \
     --silent
 )
@@ -50,6 +56,7 @@ authPassword="$sessionToken"
 basicAuthToken=$(echo -n "$authUsername:$authPassword" | base64)
 
 # Perform a basic "whoAmI" call to the API with the authorization header
-curl 'https://tripletex.no/v2/token/session/%3EwhoAmI' \
+curl "$apiHost/v2/token/session/%3EwhoAmI" \
   --header "Authorization: Basic $basicAuthToken" \
   --silent
+
