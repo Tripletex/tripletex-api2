@@ -1,11 +1,10 @@
 # order
 
-A simple example showing how to create an order and invoice it.
-
+A simple example showing how to get a valid token. 
+ 
 ## Dependencies
 
 * [api](../api)
-* [token](../token)
 
 ## How to use
 

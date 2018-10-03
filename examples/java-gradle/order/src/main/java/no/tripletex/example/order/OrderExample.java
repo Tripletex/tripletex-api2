@@ -1,6 +1,7 @@
 package no.tripletex.example.order;
 
 import no.tripletex.api.v2.TripletexApiClient;
+import no.tripletex.util.RuntimeExceptionConverter;
 import no.tripletex.v2.ApiException;
 import no.tripletex.v2.api.*;
 import no.tripletex.v2.model.*;
@@ -11,30 +12,10 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.function.Supplier;
 
-public class Example {
+public class OrderExample {
 
-    private static final Logger LOG = LoggerFactory.getLogger(Example.class);
-
-    /**
-     * Just a wrapper to avoid exception handling. Only for simplifying example code, DON'T use in production.
-     *
-     * @param <T> Type of the return.
-     */
-    interface RuntimeExceptionConverter<T> extends Supplier<T> {
-
-        @Override
-        default T get() {
-            try {
-                return getCanThrowException();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-        T getCanThrowException() throws Exception;
-    }
+    private static final Logger LOG = LoggerFactory.getLogger(OrderExample.class);
 
     public static void main(String[] args) {
         if(args.length != 2) {
@@ -42,34 +23,22 @@ public class Example {
             return;
         }
 
-        Example example = new Example();
+        OrderExample orderExample = new OrderExample();
 
         try {
-            example.run(args[0], args[1]);
+            orderExample.run(args[0], args[1]);
         } catch (ApiException e) {
-            LOG.error("Example run failed", e);
+            LOG.error("TokenExample run failed", e);
         }
     }
 
     public void run(String consumerToken, String employeeToken) throws ApiException {
         LocalDate today = LocalDate.now();
-        LocalDate tomorrow = today.plusDays(1L);
-
-        // API client, handles authentication
-        TripletexApiClient tripletexApiClient = new TripletexApiClient();
-
-        // First we need to create a session token. We could have reused an existing token if it has yet to expire.
-        TokensessionApi sessionApi = new TokensessionApi(tripletexApiClient);
-        ResponseWrapperSessionToken sessionTokenResponse = sessionApi.create(consumerToken, employeeToken, tomorrow.toString());
-        String sessionToken = sessionTokenResponse.getValue().getToken();
 
         /**
-         * "0" here means that we are authenticating for access to our own data.
-         * For accountant / proxy login, the username is the id of the client company that you are authenticating for
-         * and will be the context for all calls using the returned session token.
+         * See {@link no.tripletex.example.token.TokenExample} for how to use the token / auth API.
          */
-        tripletexApiClient.setUsername("0");
-        tripletexApiClient.setPassword(sessionToken);
+        TripletexApiClient tripletexApiClient = new TripletexApiClient(TripletexApiClient.TEST_BASE_PATH, consumerToken, employeeToken);
 
         // API access wrappers.
         LedgervatTypeApi ledgervatTypeApi = new LedgervatTypeApi(tripletexApiClient);
