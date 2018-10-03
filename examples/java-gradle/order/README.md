@@ -1,6 +1,6 @@
-# order
+# Order
 
-A simple example showing how to create an order and invoice it.
+A couple of examples showing how to create an order and invoice it.
 
 ## Dependencies
 
