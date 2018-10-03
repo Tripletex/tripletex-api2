@@ -16,4 +16,5 @@
   * [Checksum (experimental feature)](examples/bash/checksum)
 * [Java (swagger code-gen)](examples/java-gradle)
   * [Order use-case](examples/java-gradle/order)
+  * [Token use-case](examples/java-gradle/token)
 * [Webhooks (pilot feature)](examples/webhook)
