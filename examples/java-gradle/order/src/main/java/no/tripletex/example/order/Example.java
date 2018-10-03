@@ -17,18 +17,23 @@ public class Example {
 
     private static final Logger LOG = LoggerFactory.getLogger(Example.class);
 
-    interface ApiLambda<T> extends Supplier<T> {
+    /**
+     * Just a wrapper to avoid exception handling. Only for simplifying example code, DON'T use in production.
+     *
+     * @param <T> Type of the return.
+     */
+    interface RuntimeExceptionConverter<T> extends Supplier<T> {
 
         @Override
         default T get() {
             try {
-                return getException();
-            } catch (ApiException e) {
+                return getCanThrowException();
+            } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         }
 
-        T getException() throws ApiException;
+        T getCanThrowException() throws Exception;
     }
 
     public static void main(String[] args) {
@@ -58,8 +63,11 @@ public class Example {
         ResponseWrapperSessionToken sessionTokenResponse = sessionApi.create(consumerToken, employeeToken, tomorrow.toString());
         String sessionToken = sessionTokenResponse.getValue().getToken();
 
-        // "0" here means that we are authenticating as ourselves.
-        // For accountant login, the username is the id of the company you are using proxy login into.
+        /**
+         * "0" here means that we are authenticating for access to our own data.
+         * For accountant / proxy login, the username is the id of the client company that you are authenticating for
+         * and will be the context for all calls using the returned session token.
+         */
         tripletexApiClient.setUsername("0");
         tripletexApiClient.setPassword(sessionToken);
 
@@ -87,11 +95,12 @@ public class Example {
                 .findFirst()
                 .orElseThrow(IllegalStateException::new);
 
+        // Find a previously created product, create a new product if not found.
         Product product = productApi.search(null, Collections.singletonList("T00" + today.getDayOfYear()), "Order-Test-" + today.toString(), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, "*")
                 .getValues()
                 .stream()
                 .findFirst()
-                .orElseGet((ApiLambda<Product>) () ->
+                .orElseGet((RuntimeExceptionConverter<Product>) () ->
                         productApi.post(new Product()
                                 .name("Order-Test-" + today.toString())
                                 .number("T00" + today.getDayOfYear())
@@ -102,11 +111,12 @@ public class Example {
                         ).getValue()
                 );
 
-        Customer customer = customerApi.search(null, null, "test@test.test", "test@test.test", null, null, null, null, null, "id")
+        // Find a previously created customer, create a new customer if not found.
+        Customer customer = customerApi.search(null, null, null, "test@test.test", "test@test.test", null, null, null, null, null, "id")
                 .getValues()
                 .stream()
                 .findFirst()
-                .orElseGet((ApiLambda<Customer>) () ->
+                .orElseGet((RuntimeExceptionConverter<Customer>) () ->
                         // The additional object creating is to make a model with only its id set, to lessen data sent in other requests.
                         new Customer().id(customerApi.post(new Customer()
                                 .name("Test Testersen")
@@ -121,13 +131,15 @@ public class Example {
                         ).getValue().getId())
                 );
 
-        // The additional object creating is to make a model with only its id set, to lessen data sent in other requests.
-        Order order = new Order().id(orderApi.post(new Order()
+        final Integer orderId = orderApi.post(new Order()
                 .customer(customer)
                 .deliveryDate(today.plusDays(7).toString())
                 .orderDate(today.toString())
                 .isPrioritizeAmountsIncludingVat(true)
-        ).getValue().getId());
+        ).getValue().getId();
+
+        // The additional object creating is to make a model with only its id set, to lessen data sent in other requests. Also not all fields can be updated in post operations.
+        Order order = new Order().id(orderId);
 
         orderorderlineApi.postList(Arrays.asList(
                 new OrderLine()
@@ -149,7 +161,7 @@ public class Example {
                         .vatType(vatLow)
         ));
 
-        Invoice invoice = orderApi.invoice(order.getId(), today.toString(), false).getValue();
+        Invoice invoice = orderApi.invoice(order.getId(), today.toString(), false, null, null).getValue();
 
         PaymentType paymentType = invoicepaymentTypeApi.search(null, "Betalt til bank", null, null, null, "id").getValues().stream().findFirst().orElseThrow(IllegalStateException::new);
         invoice = invoiceApi.payment(invoice.getId(), today.toString(), paymentType.getId(), BigDecimal.valueOf(2612L)).getValue();
