@@ -1,4 +1,4 @@
-# order
+# Token
 
 A simple example showing how to get a valid token. 
  
