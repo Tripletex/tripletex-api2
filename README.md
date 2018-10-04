@@ -17,4 +17,5 @@
 * [Java (swagger code-gen)](examples/java-gradle)
   * [Order use-case](examples/java-gradle/order)
   * [Token use-case](examples/java-gradle/token)
+* [Travel expense example payloads](examples/json/travelExpense.md)
 * [Webhooks (pilot feature)](examples/webhook)
