@@ -1,15 +1,18 @@
-travelExpense POST.
+## travelExpense POST payload examples
 
-// Expense without cost
+### Expense without cost
+```json
 {
 	"employee":{"id":EMPLOYEE_ID},
 		"isChargeable":false,
 		"isFixedInvoicedAmount":false,
 		"isIncludeAttachedReceiptsWhenReinvoicing":false
 }
+```
 
 
-// travelExepense without compensations
+### travelExepense without compensations
+```json
 {
 	"employee":{"id":EMPLOYEE_ID},
 	"travelDetails":
@@ -28,9 +31,11 @@ travelExpense POST.
 	"isFixedInvoicedAmount":false,
 	"isIncludeAttachedReceiptsWhenReinvoicing":false
 }
+```
 
 
-// travelExpense with mileage allowances (passenger rate for 2018)
+### travelExpense with mileage allowances (passenger rate for 2018)
+```json
 {
 	"employee":{"id":EMPLOYEE_ID},
 	"travelDetails":
@@ -64,9 +69,11 @@ travelExpense POST.
 		}
 	]
 }
+```
 
 
-// travelExpense with all compensation types
+### travelExpense with all compensation types
+```json
 {
 	"employee":{"id":EMPLOYEE_ID},
 	"travelDetails":{
@@ -117,3 +124,4 @@ travelExpense POST.
 		}
 	]
 }
+```
