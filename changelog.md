@@ -1,8 +1,5 @@
 # API changelog
 
-## 2.22.2 (2018-10-09)
-* Added field `invoice` to TravelExpense 
-
 ## 2.22.1 (2018-09-19)
 * `PUT /project` Now allow changing project description.
 
