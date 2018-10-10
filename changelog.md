@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.23.1 (2018-10-10)
+* New endpoint: `/project/participant` (`POST`, `GET`, `PUT`, `DELETE`)
+* `GET /project` Now has field for participants.
+
 ## 2.23.0 (2018-10-10)
 * New endpoint: `/document`
 * Three new fields in `GET /ledger/voucher`: attachment, document and ediDocument
