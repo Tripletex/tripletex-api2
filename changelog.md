@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.22.2 (2018-10-09)
+* `GET /project` Now has field for deliveryAddress.
+
 ## 2.22.1 (2018-09-19)
 * `PUT /project` Now allow changing project description.
 
