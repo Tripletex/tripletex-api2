@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.23.0 (2018-10-10)
+* New endpoint: `/document`
+* Three new fields in `GET /ledger/voucher`
+** `attachment`
+** `document`
+** `ediDocument`
+
 ## 2.22.2 (2018-10-09)
 * `GET /project` Now has field for deliveryAddress.
 
