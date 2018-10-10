@@ -4,6 +4,7 @@
 
 
 * [Swagger API documentation](https://tripletex.no/v2-docs/) (Always up-to-date!)
+* [Test environment](https://api.tripletex.io) (Self-service creation of integration test accounts)
 * [Changelog](changelog.md)
 * [Frequently asked questions](FAQ.md)
 * [About API 2.0](https://www.tripletex.no/tripletex-api-2-0/)
