@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.23.2 (2018-10-12)
+* `GET,PUT /project` added isReadyForInvoicing.
+
 ## 2.23.1 (2018-10-10)
 * New endpoint: `/project/participant` (`POST`, `GET`, `PUT`, `DELETE`)
 * `GET /project` Now has field for participants.
