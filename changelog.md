@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.23.3 (2018-10-15)
+* Added field `invoice` to TravelExpense 
+
 ## 2.23.2 (2018-10-12)
 * `GET,PUT /project` added isReadyForInvoicing.
 
