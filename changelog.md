@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.24.0 (2018-10-24)
+* The general field `changes` now contains all changes. Before this version only the creation and the last change was listed.
+
 ## 2.23.3 (2018-10-15)
 * Added field `invoice` to TravelExpense 
 
