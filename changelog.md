@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.25.0 (2018-10-26)
+* Added endpoint `PUT /contact`
+
 ## 2.24.0 (2018-10-24)
 * The general field `changes` now contains all changes. Before this version only the creation and the last change was listed.
 
