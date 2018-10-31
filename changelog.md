@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.26.1 (2018-10-31)
+* `GET /project` added the field `displayName`
+
 ## 2.26.0 (2018-10-29)
 * Added endpoint `GET /invoice/details/{id}` which returns additional details about project invoices, such as project fee amounts, markup, travel expenses, invoice text, the amount on account balance and vat type. 
 * Added `projectInvoiceDetails` to the Invoice API model, which contains a list of project invoice details for the given invoice.
