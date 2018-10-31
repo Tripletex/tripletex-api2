@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.26.2 (2018-10-31)
+* `PUT /ledger/voucher/{id}/:reverse` added method for reversing vouchers.
+
 ## 2.26.1 (2018-10-31)
 * `GET /project` added the field `displayName`
 
