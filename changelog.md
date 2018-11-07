@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.26.3 (2018-11-07)
+* `/invoice/{id}/:payment` added optinal paidAmountCurrency parameter, to specify the amount paid in the invoice currency.
+
 ## 2.26.2 (2018-10-31)
 * `PUT /ledger/voucher/{id}/:reverse` added method for reversing vouchers.
 
