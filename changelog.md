@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.27.1 (2018-11-21)
+* Added PUT, POST and Get order line by ID to `project/orderline` 
+
+## 2.27.0 (2018-11-12)
+* Added field `discountPrice` to Product 
+
 ## 2.26.3 (2018-11-07)
 * `/invoice/{id}/:payment` added optinal paidAmountCurrency parameter, to specify the amount paid in the invoice currency.
 
