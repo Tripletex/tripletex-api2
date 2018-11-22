@@ -1,7 +1,10 @@
 # API changelog
 
+## 2.27.2 (2018-11-22)
+* Added fields to /country: `isoAlpha2Code`, `isoAlpha3Code`, `isoNumericCode`
+
 ## 2.27.1 (2018-11-21)
-* Added PUT, POST and Get order line by ID to `project/orderline` 
+* Added PUT, POST and GET order line by ID to `project/orderline` 
 
 ## 2.27.0 (2018-11-12)
 * Added field `discountPrice` to Product 
