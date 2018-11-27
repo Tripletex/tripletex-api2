@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.27.3 (2018-11-27)
+* Deprecated response field `VoucherSearchResponse.totalNumberOfPostings`
+
 ## 2.27.2 (2018-11-22)
 * Added fields to /country: `isoAlpha2Code`, `isoAlpha3Code`, `isoNumericCode`
 
