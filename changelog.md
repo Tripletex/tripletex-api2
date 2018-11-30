@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.27.4 (2018-11-30)
+* Added field `number`to Payslip
+
 ## 2.27.3 (2018-11-27)
 * Deprecated response field `VoucherSearchResponse.totalNumberOfPostings`
 
