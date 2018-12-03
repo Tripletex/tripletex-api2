@@ -2,7 +2,7 @@
 
 ## 2.28.0 (2018-12-03)
 * Added endpoint GET, POST, PUT /division
-* Depracated endpoint GET /company/divisions
+* Deprecated endpoint GET /company/divisions
 
 ## 2.27.4 (2018-11-30)
 * Added field `number`to Payslip
