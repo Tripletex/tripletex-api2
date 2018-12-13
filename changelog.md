@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.28.1 (2018-12-13)
+* Added endpoint GET, PUT `/company/settings/altinn`
+
 ## 2.28.0 (2018-12-03)
 * Added endpoint GET, POST, PUT /division
 * Deprecated endpoint GET /company/divisions
