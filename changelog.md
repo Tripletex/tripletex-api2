@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.29.0 (2018-12-14)
+* Added endpoint POST employee/employment/leaveOfAbsence/list
+
 ## 2.28.1 (2018-12-13)
 * Added endpoint GET, PUT `/company/settings/altinn`
 
