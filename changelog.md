@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.30.0 (2018-12-18)
+* Added endpoint POST, PUT, GET employee/nextOfKin
+* Added fields to /employee: `phoneNumberHome`, `InternationalIdDTO `
+
 ## 2.29.0 (2018-12-14)
 * Added endpoint POST employee/employment/leaveOfAbsence/list
 
