@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.30.2 (2019-01-08)
+* Added fields to /supplier: `isWholesaler`, `showProducts`
+* Added field to /product/external: `organizationNumber`
+
+## 2.30.1 (2018-12-19)
+* Added field to /employee: `comments`
+
 ## 2.30.0 (2018-12-18)
 * Added endpoint POST, PUT, GET employee/nextOfKin
 * Added fields to /employee: `phoneNumberHome`, `InternationalIdDTO `
