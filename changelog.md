@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.30.4 (2019-01-17)
+* Added ENUM values to `employmentType`, `remunerationType` and `workingHoursScheme` in /employee/employment/details
+
 ## 2.30.2 (2019-01-08)
 * Added fields to /supplier: `isWholesaler`, `showProducts`
 * Added field to /product/external: `organizationNumber`
