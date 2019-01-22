@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.31.0 (2019-01-20)
+* Added endpoint GET `/timestheet/settings`
+
 ## 2.30.5 (2019-01-20)
 * Added readOnly fields to /product: `elNumber`, `nrfNumber`
 
