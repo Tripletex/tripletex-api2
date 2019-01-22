@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.30.5 (2019-01-20)
+* Added readOnly fields to /product: `elNumber`, `nrfNumber`
+
 ## 2.30.4 (2019-01-17)
 * Added ENUM values to `employmentType`, `remunerationType` and `workingHoursScheme` in /employee/employment/details
 
