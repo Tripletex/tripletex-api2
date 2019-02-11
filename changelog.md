@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.32.0 (2019-02-11)
+* Added endpoint GET, POST `/{travelExpenseId}/attachment`
+
 ## 2.31.0 (2019-01-20)
 * Added endpoint GET `/timestheet/settings`
 
