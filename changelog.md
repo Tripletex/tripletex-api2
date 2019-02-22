@@ -3,6 +3,9 @@
 ## 2.32.2 (2019-02-20)
 * Added the possibility to create and update customers with invoiceSendMethod. The parameters `invoiceSendMethod` which is enum values and `singleCustomerInvoice` which is a boolean have been added to the PUT /customer/{id}/ and POST /customer API endpoints. These parameters are optional, but for setting `invoiceSendMethod` to EHF the `singleCustomerInvoice` must be set to false.
 
+## 2.32.1 (2019-02-15)
+* Added endpoint DELETE `/ledger/voucher/{id}/attachment`
+
 ## 2.32.0 (2019-02-11)
 * Added endpoint GET, POST `/{travelExpenseId}/attachment`
 
