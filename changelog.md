@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.32.3 (2019-02-26)
+* Added the possibility to create and update customers with emailAttahcmentType. The field `emailAttahcmentType` has been added to the PUT /customer/{id}/ and POST /customer API endpoints. This parameter is optional.
+
 ## 2.32.2 (2019-02-22)
 * Employee's address can be managed (created and updated) via `/employee` endpoint
 * Customer's postal and physical address can be managed (created and updated) via `/customer` endpoint
