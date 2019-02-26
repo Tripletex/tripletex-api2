@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.32.2 (2019-02-22)
+* Employee's address can be managed (created and updated) via `/employee` endpoint
+* Customer's postal and physical address can be managed (created and updated) via `/customer` endpoint
+* Supplier's postal and physical address can be managed (created and updated) via `/supplier` endpoint
+
 ## 2.32.2 (2019-02-20)
 * Added the possibility to create and update customers with invoiceSendMethod. The parameters `invoiceSendMethod` which is enum values and `singleCustomerInvoice` which is a boolean have been added to the PUT /customer/{id}/ and POST /customer API endpoints. These parameters are optional, but for setting `invoiceSendMethod` to EHF the `singleCustomerInvoice` must be set to false.
 
