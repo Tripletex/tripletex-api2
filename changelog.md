@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.23.3 (2019-02-28)
-*Added fields `isMainEmployer` and `taxDeductionCode` to endpoint `/employee/employment` 
+* Added fields `isMainEmployer` and `taxDeductionCode` to endpoint `/employee/employment` 
 
 ## 2.32.3 (2019-02-26)
 * Added the possibility to create and update customers with emailAttahcmentType. The field `emailAttahcmentType` has been added to the PUT /customer/{id}/ and POST /customer API endpoints. This parameter is optional.
