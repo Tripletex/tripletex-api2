@@ -1,6 +1,6 @@
 # API changelog
 
-##2.23.3 (2019-02-28)
+## 2.23.3 (2019-02-28)
 *Added fields `isMainEmployer` and `taxDeductionCode` to endpoint `/employee/employment` 
 
 ## 2.32.3 (2019-02-26)
