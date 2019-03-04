@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.32.4 (2019-02-26)
+* Extended `invoiceSendMethod` to support EFAKTURA. VIPPS and PAPER for PUT /customer/{id}/ and POST /customer API endpoints. The PUT /invoice/{id}/:send also supports these send methods.
+
 ## 2.23.3 (2019-02-28)
 * Added fields `isMainEmployer` and `taxDeductionCode` to endpoint `/employee/employment` 
 
