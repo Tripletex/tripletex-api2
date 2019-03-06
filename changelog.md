@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.32.5 (2019-03-06)
+* Added field `factor` to `Currency` for GET `/currency`.
+
 ## 2.32.4 (2019-03-04)
 * Extended `invoiceSendMethod` to support EFAKTURA. VIPPS and PAPER for PUT /customer/{id}/ and POST /customer API endpoints. The PUT /invoice/{id}/:send also supports these send methods.
 
