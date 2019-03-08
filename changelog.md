@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.33.0 (2019-03-08)
+* Added endpoint GET, POST, PUT `/employee/hourlyCostAndRate`
+
 ## 2.32.5 (2019-03-06)
 * Added field `factor` to `Currency` for GET `/currency`.
 
