@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.33.1 (2019-03-12)
-Added field to /employee: holidayAllowanceEarned: year, amount, basis, amountExtraHolidayWeek
+* Added field to /employee: holidayAllowanceEarned: year, amount, basis, amountExtraHolidayWeek
 
 ## 2.33.0 (2019-03-08)
 * Added endpoint GET, POST, PUT `/employee/hourlyCostAndRate`
