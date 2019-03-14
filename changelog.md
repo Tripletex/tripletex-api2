@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.33.2 (2019-03-14)
+* Enhanced endpoint  `/department` with DELETE method
+
 ## 2.33.1 (2019-03-12)
 * Added field to /employee: holidayAllowanceEarned: year, amount, basis, amountExtraHolidayWeek
 
