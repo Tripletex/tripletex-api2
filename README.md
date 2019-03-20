@@ -24,5 +24,6 @@
   * [Employee example payloads](examples/json/employee.md)
   * [Customer example payloads](examples/json/customer.md)
   * [Supplier example payloads](examples/json/supplier.md)
+  * [Company example payloads](examples/json/company.md)
 * [Webhooks (pilot feature)](examples/webhook)
 * [Python](examples/python)
