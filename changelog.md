@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.33.3 (2019-04-02)
+* Added endpoint GET, POST, PUT, DELETE `project\hourlyRates`
+* Added endpoint GET, POST, PUT, DELETE `project\hourlyRates\projectSpecificRates`
+
 ## 2.33.2 (2019-03-14)
 * Enhanced endpoint  `/department` with DELETE method
 
