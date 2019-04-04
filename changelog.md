@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.33.4 (2019-04-04)
+* Added readOnly field `hourlyCostPercentage` to `timesheet\entry`
+
 ## 2.33.3 (2019-04-02)
 * Added endpoint GET, POST, PUT, DELETE `project\hourlyRates`
 * Added endpoint GET, POST, PUT, DELETE `project\hourlyRates\projectSpecificRates`
