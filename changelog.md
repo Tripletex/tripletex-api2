@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.33.6 (2019-04-12)
+* Added new search parameter `isApplicableForSupplierInvoice` to `GET /ledger/account`
+
 ## 2.33.5 (2019-04-10)
 * Customer's isSupplier can be managed (created and updated) via `/customer`
 
