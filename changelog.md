@@ -1,8 +1,12 @@
 # API changelog
 
+## 2.33.8 (2019-04-15)
+* Added field `invoicesDueIn` to `/customer` endpoint
+* Added field `invoicesDueInType` to `/supplier` endpoint
+
 ## 2.33.7 (2019-04-15)
-* Added new search parameter `overdueNoticeEmail` to `/customer` endpoint
-* Added new search parameter `overdueNoticeEmail` to `/supplier` endpoint
+* Added field `overdueNoticeEmail` to `/customer` endpoint
+* Added field `overdueNoticeEmail` to `/supplier` endpoint
 
 ## 2.33.6 (2019-04-12)
 * Added new search parameter `isApplicableForSupplierInvoice` to `GET /ledger/account`
