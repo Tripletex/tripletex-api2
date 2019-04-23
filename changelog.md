@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.33.9 (2019-04-23)
-* Added endpoint for getting currency exchange rates at /currency/{id}/rate
+* Added endpoint for getting currency exchange rates at `/currency/{id}/rate`
 
 ## 2.33.8 (2019-04-15)
 * Added field `invoicesDueIn` to `/customer` endpoint
