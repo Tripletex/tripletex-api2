@@ -2,7 +2,7 @@
 
 **Tripletex WebHook's supports a growing number of internal events for your integrations to subscribe to.**
 
-You can see the API2 endpoints for managing your WebHook subscriptions under **/event** and **/event/subscription** in the [swagger doc](https://tripletex.no/v2-docs/).
+You can see the API2 endpoints for managing your WebHook subscriptions under **/event** and **/event/subscription** in the [swagger doc](https://tripletex.no/v2-docs/new).
 
 ## List currently available events
 
@@ -58,6 +58,18 @@ It is also possible to see supported events from the API:
 	}
 > "*fields*" is an optional parameter, and follows the same format as in API2.
 If you made a call to **GET /v2/product/{ID}** with a *fields* parameter, you can use the **same fields** to get the same response from a subscription to **product.\***.
+
+## Authentication for callback
+
+It is recommended to set up some form of authentication against the `targetUrl` callback, to prevent misuse.
+At the moment, two authentication mechanisms are supported:
+
+1. Basic authentication as a part of the URL. Username and password specified as a part of the URL will be sent as an `Authorization` header when performing callbacks. Example: `https://username:password@myintegration.example/tripletex`. Username and password will here be sent following the (basic authentication protocol)[https://en.wikipedia.org/wiki/Basic_access_authentication].
+
+2. Include secret token as query/path parameters. Example: `https://myintegration.example/tripletex?token=secret123`. This is less recommended than basic authentication, but also supported.
+
+These are the supported mechanisms supported **right now**. If you have need for more complicated authentication, please let us know and we will consider adding additional mechanisms.
+
 
 ### Syncing
 If you set up a subscription, give it a few seconds to propagate to all servers, and then sync up all data from e.g. GET /v2/product. 
