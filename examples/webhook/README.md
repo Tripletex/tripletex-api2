@@ -64,7 +64,7 @@ If you made a call to **GET /v2/product/{ID}** with a *fields* parameter, you ca
 It is recommended to set up some form of authentication against the `targetUrl` callback, to prevent misuse.
 At the moment, two authentication mechanisms are supported:
 
-1. Basic authentication as a part of the URL. Username and password specified as a part of the URL will be sent as an `Authorization` header when performing callbacks. Example: `https://username:password@myintegration.example/tripletex`. Username and password will here be sent following the (basic authentication protocol)[https://en.wikipedia.org/wiki/Basic_access_authentication].
+1. Basic authentication as a part of the URL. Username and password specified as a part of the URL will be sent as an `Authorization` header when performing callbacks. Example: `https://username:password@myintegration.example/tripletex`. Username and password will here be sent following the [basic authentication protocol](https://en.wikipedia.org/wiki/Basic_access_authentication).
 
 2. Include secret token as query/path parameters. Example: `https://myintegration.example/tripletex?token=secret123`. This is less recommended than basic authentication, but also supported.
 
