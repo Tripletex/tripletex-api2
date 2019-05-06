@@ -16,6 +16,7 @@
 
 ## 2.33.5 (2019-04-10)
 * Customer's isSupplier can be managed (created and updated) via `/customer`
+* Supplier's isCustomer can be managed (created and updated) via `/supplier`
 
 ## 2.33.4 (2019-04-04)
 * Added readOnly field `hourlyCostPercentage` to `timesheet\entry`
