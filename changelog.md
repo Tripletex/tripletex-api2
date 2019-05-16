@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.34.0 (2019-05-16)
+* Added endpoint `/event/{eventType}` to give examples for each event model
+* Added event type `notification.sent`, which is triggered once the employee is sent a new notifications
+
 ## 2.33.9 (2019-04-23)
 * Added endpoint for getting currency exchange rates at `/currency/{id}/rate`
 
