@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.34.2 (2019-05-20)
+
+* Changed field `amount` to `/travelExpense` endpoint to readonly
+* Added field `chargeableAmount` to `/travelExpense` endpoint 
+* Changed field `costs` to `/travelExpense` to be writable
+* Added field `document` to `/travelExpense` endpoint 
+* For `travelExpense/cost`, changed field `amountNOKInclVAT` to `/travelExpens/cost` to be writable
+
 ## 2.34.0 (2019-05-16)
 * Added endpoint `/event/{eventType}` to give examples for each event model
 * Added event type `notification.sent`, which is triggered once the employee is sent a new notifications
