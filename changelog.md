@@ -1,7 +1,9 @@
 # API changelog
 
-## 2.34.2 (2019-05-20)
+## 2.35.0 (2019-05-22)
+* Added endpoint GET `/project/controlForm`
 
+## 2.34.2 (2019-05-20)
 * Changed field `amount` to `/travelExpense` endpoint to readonly
 * Added field `chargeableAmount` to `/travelExpense` endpoint 
 * Changed field `costs` to `/travelExpense` to be writable
