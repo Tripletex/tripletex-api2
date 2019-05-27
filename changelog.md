@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.35.1 (2019-05-27)
+* GET `/ledger/vatType` and GET `/ledger/vatType/{0}` now supports vat number 0.
+* Most objects that had `VatType` as a field will now be able to return data instead of `null` when the vat number is 0.
+
 ## 2.35.0 (2019-05-22)
 * Added endpoint GET `/project/controlForm`
 
