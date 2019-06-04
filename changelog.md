@@ -1,5 +1,28 @@
 # API changelog
 
+## 2.35.2 (2019-06-04)
+New Document Archive endpoints that handles document archive associated with diferent object types.
+Returns list with all documents archive associated with an object type specified in path variable {id}
+* GET:  `/documentArchive/project/{id}`         
+* GET:  `/documentArchive/employee/{id}` 
+* GET:  `/documentArchive/customer/{id}`        
+* GET:  `/documentArchive/supplier/{id}` 
+* GET:  `/documentArchive/product/{id}`                  
+* GET:  `/documentArchive/account/{id}`                  
+* GET:  `/documentArchive/prospect/{id}`                 
+Create a document/upload to archive and associate it with an object type specified by {id}
+* POST:  `/documentArchive/project/{id}`        
+* POST:  `/documentArchive/employee/{id}` 
+* POST:  `/documentArchive/supplier/{id}`      
+* POST:  `/documentArchive/customer/{id}`   
+* POST:  `/documentArchive/product/{id}`                  
+* POST:  `/documentArchive/account/{id}`                  
+* POST:  `/documentArchive/prospect/{id}`                  
+Updates document archive meta data for a specific document {id}
+* PUT: `/documentArchive/{id}`       
+Delete document archive specified by {id}
+* DELETE: `/documentArchive/{id}` 
+
 ## 2.35.1 (2019-05-27)
 * GET `/ledger/vatType` and GET `/ledger/vatType/{id}` now supports vat number 0.
 * Most objects that had `VatType` as a field will now be able to return data instead of `null` when the vat number is 0.
