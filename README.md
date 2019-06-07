@@ -13,6 +13,7 @@
 ## Documentation
 
 - [Webhooks](docs/webhooks)
+- [Zapier app (beta)](docs/zapier)
 
 ## Code examples
 
