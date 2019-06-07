@@ -12,7 +12,7 @@
 
 ## Documentation
 
-- [Webhooks](docs/webhooks.md)
+- [Webhooks](docs/webhooks)
 
 ## Code examples
 
