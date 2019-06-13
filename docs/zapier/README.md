@@ -8,6 +8,8 @@ At the moment, the app is only available to beta-users.
 
 Contact **Tripletex technical support** for questions regarding the Zapier app.
 
+teknisk-support@tripletex.no
+
 ---
 
 ## Frequently asked questions
