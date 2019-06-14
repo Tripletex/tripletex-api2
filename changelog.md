@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.3 (2019-06-14)
+* Removed `maxLength` validation for enum-fields. This resolves an issue with the [C# swagger code generator](https://github.com/swagger-api/swagger-codegen/issues/9148).
+
 ## 2.35.2 (2019-06-04)
 New Document Archive endpoints that handles document archive associated with diferent object types.
 Returns list with all documents archive associated with an object type specified in path variable {id}
