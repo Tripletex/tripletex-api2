@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.35.4 (2019-06-20)
+New endpoint travelexpense/settings for a company.
+* GET: "/travelExpense/settings"
+
 ## 2.35.3 (2019-06-14)
 * Removed `maxLength` validation for enum-fields. This resolves an issue with the [C# swagger code generator](https://github.com/swagger-api/swagger-codegen/issues/9148).
 
