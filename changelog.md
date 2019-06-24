@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.5 (2019-06-24)
+* validate that costs exists on expense for `PUT` /travelExpense/:deliver and `PUT` /travelExpense/:approve
+
 ## 2.35.4 (2019-06-20)
 New endpoint travelexpense/settings for a company.
 * GET: "/travelExpense/settings"
