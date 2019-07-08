@@ -40,7 +40,7 @@ It is also possible to see supported events from the API:
         "value": {
     	    "product.create": {
     	        "description": "Product created",
-    		"payloadModel": "Product"
+                "payloadModel": "Product"
 
     	    },
     	    "order.delete": {
@@ -58,7 +58,9 @@ It is also possible to see supported events from the API:
     {
     	"event": "product.create",
     	"targetUrl": "https://your.receiver",
-    	"fields": "optional; fields from the triggering object to send"
+    	"fields": "(optional) fields from the triggering object to send",
+        "authHeaderName": "(optional) custom header name, e.g. Authorization",
+        "authHeaderValue": "(optional) custom header value, e.g. Bearer abc123"
     }
 
 > "_fields_" is an optional parameter, and follows the same format as in API2.
@@ -67,11 +69,13 @@ It is also possible to see supported events from the API:
 ## Authentication for callback
 
 It is recommended to set up some form of authentication against the `targetUrl` callback, to prevent misuse.
-At the moment, two authentication mechanisms are supported:
+At the moment, three authentication mechanisms are supported:
 
-1. Basic authentication as a part of the URL. Username and password specified as a part of the URL will be sent as an `Authorization` header when performing callbacks. Example: `https://username:password@myintegration.example/tripletex`. Username and password will here be sent following the [basic authentication protocol](https://en.wikipedia.org/wiki/Basic_access_authentication).
+1. **(Recommended)** Custom authentication header. The fields `authHeaderName` and `authHeaderValue` allow for custom authentication headers. These will be sent as-is for every webhook POST callback. For example, if you specify the fields `{ "authHeaderName": "Authorization", "authHeaderValue": "Bearer abc123"}`, each webhook will have the `Authorization` header set with value `Bearer abc123`.
 
-2. Include secret token as query/path parameters. Example: `https://myintegration.example/tripletex?token=secret123`. This is less recommended than basic authentication, but also supported.
+2. Basic authentication as a part of the URL. Username and password specified as a part of the URL will be sent as an `Authorization` header when performing callbacks. Example: `https://username:password@myintegration.example/tripletex`. Username and password will here be sent following the [basic authentication protocol](https://en.wikipedia.org/wiki/Basic_access_authentication).
+
+3. Include secret token as query/path parameters. Example: `https://myintegration.example/tripletex?token=secret123`. This is less recommended than basic authentication, but also supported.
 
 These are the supported mechanisms supported **right now**. If you have need for more complicated authentication, please let us know and we will consider adding additional mechanisms.
 
