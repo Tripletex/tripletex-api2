@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.7 (2019-07-10)
+* Added new field `phoneNumberWork` (read/write) to `Employee` for `/employee` endpoint
+
 ## 2.35.6 (2019-07-08)
 * Added fields `authHeaderName` (read/write) and `authHeaderValue` (write only) to `Subscription` to allow for custom authentication headers. If set, the specified header will be included in webhook POST callbacks.
 
