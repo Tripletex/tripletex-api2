@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.35.8 (2019-07-19)
+* Updated `swagger.json`:
+    * Added `schemas` property to clearly specify that only HTTPS is supported (required for Postman swagger import)
+    * Added `contact` property with a link to the GitHub repository
+
 ## 2.35.7 (2019-07-10)
 * Added new field `phoneNumberWork` (read/write) to `Employee` for `/employee` endpoint
 
