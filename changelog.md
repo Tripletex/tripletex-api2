@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.35.9 (2019-08-05)
+New API Endpoint for Order, that lets you attach a document to a specified Order ID:
+* PUT: `/order/{id}/:attach`  
+
 ## 2.35.8 (2019-07-19)
 * Updated `swagger.json`:
     * Added `schemas` property to clearly specify that only HTTPS is supported (required for Postman swagger import)
