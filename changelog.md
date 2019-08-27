@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.10 (2019-08-27)
+* Added field `ean` to `/product` endpoint
+
 ## 2.35.9 (2019-08-05)
 New API Endpoint for Order, that lets you attach a document to a specified Order ID:
 * PUT: `/order/{id}/:attach`  
