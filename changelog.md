@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.11 (2019-08-30)
+* Changed type of query parameter `employeeId` in `/employee/employment/details` endpoint from Integer to String
+
 ## 2.35.10 (2019-08-27)
 * Added field `ean` to `/product` endpoint
 
