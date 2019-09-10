@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.12 (2019-09-10)
+* Changed type of employment/division from int to divisionDTO; employment/details/occupationcode from int to occupationcodeDTO; employment/details/municipalityid from int to municipalityDTO.
+
 ## 2.35.11 (2019-08-30)
 * Changed type of query parameter `employeeId` in `/employee/employment/details` endpoint from Integer to String
 
