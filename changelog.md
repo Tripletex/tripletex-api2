@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.35.13 (2019-10-01)
+* For `travelExpense/costCategory`, added filtering on the inactive field and user settings for cost categories. 
+
 ## 2.35.12 (2019-09-10)
 * Changed type of employment/division from int to divisionDTO; employment/details/occupationcode from int to occupationcodeDTO; employment/details/municipalityid from int to municipalityDTO.
 
