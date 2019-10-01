@@ -11,6 +11,7 @@ New project/period endpoints:
 New project/task endpoint:
 * GET:  `/project/task`
 
+New fields:
 * Added fields `signatureRequired` and `signed` to `/project/controlForm` endpoint
 * Added field `isapproved` to `/invoice endpoint
 * Added fields `signatureRequired` and `signed` to `/project/controlForm` endpoint
