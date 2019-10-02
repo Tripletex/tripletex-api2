@@ -1,5 +1,9 @@
 # API changelog
 
+
+## 2.36.01 (2019-10-02)
+* Added query parameters for the fields `inActive` and `showOnEmployeeExpenses` for `travelExpense/costCategory`.
+
 ## 2.36.0 (2019-10-01)
 New project/period endpoints:
 * GET:  `/project/{id}/period/hourlistReport`
@@ -17,9 +21,6 @@ New fields:
 * Added fields `signatureRequired` and `signed` to `/project/controlForm` endpoint
 * Added fields `isFixedPrice`, `fixedprice`, `contributionMarginPercent`, `numberOfSubProjects`, `numberOfProjectParticipants`, `contact`, `invoicingPlan` and `preliminaryInvoice` to `/project/controlForm` endpoint
 * Added field `isBudget` and `invoice` to `/project/orderline` endpoint
-
-## 2.35.13 (2019-10-01)
-* Added query parameters for the fields `inActive` and `showOnEmployeeExpenses` for `travelExpense/costCategory`.
 
 ## 2.35.12 (2019-09-10)
 * Changed type of employment/division from int to divisionDTO; employment/details/occupationcode from int to occupationcodeDTO; employment/details/municipalityid from int to municipalityDTO.
