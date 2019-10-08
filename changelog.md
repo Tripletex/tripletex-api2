@@ -1,6 +1,11 @@
 # API changelog
 
 
+## 2.36.02 (2019-10-07)
+New WebHooks events added:
+* `employee.create`, `employee.update` and `employee.delete`
+* `contact.create`, `contact.update` and `contact.delete`
+
 ## 2.36.01 (2019-10-02)
 * Added query parameters for the fields `inActive` and `showOnEmployeeExpenses` for `travelExpense/costCategory`.
 
