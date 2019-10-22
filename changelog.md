@@ -1,5 +1,7 @@
 # API changelog
 
+## 2.36.3 (2019-10-17)
+* Feature: all responses now has a header field named `x-tlx-request-id` containing the request identifier.
 
 ## 2.36.02 (2019-10-07)
 New WebHooks events added:
