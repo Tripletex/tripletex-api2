@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.37.0 (2019-10-24)
+Added support for subscription invoices in the API. First create an order with subscription settings, then approve the order for subscription invoicing. The subscription invoice can also be charged using order :invoice method. New API methods:
+* PUT:  `/order/{id}/approveSubscriptionInvoice`
+* PUT:  `/order/{id}/unApproveSubscriptionInvoice`
+
+
 ## 2.36.3 (2019-10-17)
 * Feature: all responses now has a header field named `x-tlx-request-id` containing the request identifier.
 
