@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.37.2 (2019-11-15)
+
+Added 'mimetype' field to DocumentDTO
+
 ## 2.37.1 (2019-11-07)
 
 Added 'isSalaryAdmin' and 'showPayslip' to TravelExpenseDTO
