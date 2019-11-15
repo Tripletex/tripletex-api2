@@ -2,7 +2,11 @@
 
 ## 2.37.2 (2019-11-15)
 
-Added 'mimetype' field to DocumentDTO
+* Added 'mimetype' field to DocumentDTO
+* Updated `Bankstatement`
+	* Added `accountId` field to Bankstatement and restrictions have been added to not allow bankstatements for the same 
+	account and time period.  
+	* POST: `/bank/statement/import` now requires that `bankId`, `accountId`, `fromDate` and `toDate` is spesified.
 
 ## 2.37.1 (2019-11-07)
 
