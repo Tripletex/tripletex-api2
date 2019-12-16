@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.37.5 (2019-12-16)
+Abroad remittance for salary transactions is now supported - only in pilot. Added following fields to EmployeeDTO:
+ * iban
+ * bic (swift)
+ * creditorBankCountryId 
+
 ## 2.37.3 (2019-11-25)
 * Added query param includePayrollTaxZones to endpoint municipality/get. Default is true. True will return payroll tax zone info with the municipality DTO. Notice that since there now are municipalities with more than one zone, those are represented by more than one DTO with the same municipality number.
 
