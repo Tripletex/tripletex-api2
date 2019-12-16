@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.37.6 (2019-12-16)
+Added two new endpoints for salary compilation:
+ * `/salary/compilation`
+ * `/salary/compilation/pdf`
+
 ## 2.37.5 (2019-12-16)
 Abroad remittance for salary transactions is now supported - only in pilot. Added following fields to EmployeeDTO:
  * iban
