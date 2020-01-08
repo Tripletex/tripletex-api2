@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.37.7 (2020-01-08)
+Added following field to EmployeeDTO:
+ * phoneNumberMobileCountryId (If not set, it will be derived from phoneNumberMobile if possible, or default to Norway)
+
 ## 2.37.6 (2019-12-16)
 Added two new endpoints for salary compilation:
  * `/salary/compilation`
