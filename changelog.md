@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.37.8 (2020-01-09)
+Removed `required` validation for fields marked as `readOnly`. Resolves [issue #12](https://github.com/Tripletex/tripletex-api2/issues/12)
+
 ## 2.37.7 (2020-01-08)
 Added following field to EmployeeDTO:
  * phoneNumberMobileCountryId (If not set, it will be derived from phoneNumberMobile if possible, or default to Norway)
