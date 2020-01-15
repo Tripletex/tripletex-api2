@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.38.0 (2020-01-15)
+Added endpoint:
+* GET `/purchaseOrder` and GET `/purchaseOrder/{id}`
+
 ## 2.37.8 (2020-01-09)
 Removed `required` validation for fields marked as `readOnly`. Resolves [issue #12](https://github.com/Tripletex/tripletex-api2/issues/12)
 
