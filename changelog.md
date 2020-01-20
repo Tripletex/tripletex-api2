@@ -1,6 +1,6 @@
 # API changelog
 
-## 2.38.1 (2020-01-16)
+## 2.38.1 (2020-01-20)
 Updated following field in ProjectDTO:
  * mainProject should now update the main project via PUT `/project/{id}`
 ## 2.38.1 (2020-01-16)
