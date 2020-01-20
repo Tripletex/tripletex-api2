@@ -1,6 +1,9 @@
 # API changelog
 
-## 2.38.1 (2020-01-08)
+## 2.38.1 (2020-01-16)
+Updated following field in ProjectDTO:
+ * mainProject should now update the main project via PUT `/project/{id}`
+## 2.38.1 (2020-01-16)
 Added following field to ContactDTO:
  * phoneNumberMobileCountryId (If not set, it will be derived from phoneNumberMobile if possible, or default to Norway)
 
