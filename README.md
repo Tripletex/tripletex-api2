@@ -39,5 +39,5 @@
 
 - [March 2018 – API Meetup v1](https://jrtm.github.io/tripletex-talks/best-practices.html)
 - [October 2018 – API Meetup v2](https://jrtm.github.io/tripletex-talks/meetup-oct2018.html)
-- January 2020 – API Meetup v3 (coming soon, see [meetup.com](https://www.meetup.com/Tripletex-API-Meetup/events/266042702/))
+- [January 2020 – API Meetup v3](https://julian.tripletex.dev/api-meetup-v3.pdf)
 
