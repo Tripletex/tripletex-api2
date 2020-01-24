@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.38.1 (DATE)
+End point changed:
+* added `showInTimesheet` to `/salary/type` this boolean value describes if if a salary type is applicable for timesheet or not
+
+New endpoint:
+* timesheet/salaryTypeSpecification (GET, POST, PUT DELETE):  
+Adding this endpoint has given us the possibility to log for instance overtime. 
+
 ## 2.38.1 (2020-01-20)
 Updated following field in ProjectDTO:
  * mainProject should now update the main project via PUT `/project/{id}`
