@@ -1,5 +1,11 @@
 # API changelog
 
+
+## 2.38.4 (2020-01-30)
+ * Allow creation of external projects (isInternal = false) from projectAPI for pilots only.
+ * New endpoint `/project/projectActivity`
+ * POST:  `/activity`
+
 ## 2.38.3 (2020-01-30)
  * Added field `status` to GET `/purchaseOrder` and GET `/purchaseOrder/{id}` endpoint
 
