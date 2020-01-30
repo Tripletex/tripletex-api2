@@ -2,7 +2,7 @@
 
 
 ## 2.38.4 (2020-01-30)
- * Allow creation of external projects (isInternal = false) from projectAPI for pilots only.
+ * Allow creation of external projects (isInternal = false) from POST `/project/` and PUT `/project/` for pilots only.
  * New endpoint `/project/projectActivity`
  * POST:  `/activity`
 
