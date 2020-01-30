@@ -1,6 +1,9 @@
 # API changelog
 
-## 2.38.1 (2020-01-20)
+## 2.38.3 (2020-01-20)
+Added field `status` to GET `/purchaseOrder` and GET `/purchaseOrder/{id}` endpoint
+
+## 2.38.2 (2020-01-20)
 Updated following field in ProjectDTO:
  * mainProject should now update the main project via PUT `/project/{id}`
 ## 2.38.1 (2020-01-16)
