@@ -1,8 +1,6 @@
 # Checksum
 
-Example code and documentation for the experimental "checksum" feature.
-
-**Important note**: The checksum feature is currently **experimental**, and should not be relied on without safeguards.
+Example code and documentation for the `checksum` feature.
 
 ---
 
