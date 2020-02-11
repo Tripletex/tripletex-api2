@@ -19,7 +19,7 @@
 
 - [Bash (shell script)](examples/bash)
   - [Simple authentication use-case](examples/bash/authentication/example.sh)
-  - [Checksum (experimental feature)](examples/bash/checksum)
+  - [Checksum](examples/bash/checksum)
 - [Java (swagger code-gen)](examples/java-gradle)
   - [Order use-case](examples/java-gradle/order)
   - [Token use-case](examples/java-gradle/token)
