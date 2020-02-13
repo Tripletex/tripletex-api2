@@ -1,14 +1,27 @@
 # API changelog
 
-## 2.38.1 (DATE)
+## 2.39.0 (2020-02-13)
 End point changed:
 * added `showInTimesheet` to `/salary/type` this boolean value describes if if a salary type is applicable for timesheet or not
 
 New endpoint:
 * timesheet/salaryTypeSpecification (GET, POST, PUT DELETE):  
-Adding this endpoint has given us the possibility to log for instance overtime. 
+Adding this endpoint has given us the possibility to log for instance overtime.
 
-## 2.38.1 (2020-01-20)
+## 2.38.5 (2020-02-03)
+Webhooks for `create` (and similar) events are now triggered even when an update happens at the same time.
+Previously, only the `update` webhook was sent, skipping the `create` webhook.
+This means it should no longer be necessary to subscribe to `update`-events when you're only interested in `create`.
+
+## 2.38.4 (2020-01-30)
+ * Allow creation of external projects (isInternal = false) from POST `/project/` and PUT `/project/` for pilots only.
+ * New endpoint `/project/projectActivity`
+ * POST:  `/activity`
+
+## 2.38.3 (2020-01-30)
+ * Added field `status` to GET `/purchaseOrder` and GET `/purchaseOrder/{id}` endpoint
+
+## 2.38.2 (2020-01-20)
 Updated following field in ProjectDTO:
  * mainProject should now update the main project via PUT `/project/{id}`
 ## 2.38.1 (2020-01-16)
