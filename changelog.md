@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.39.0 (2020-02-13)
+End point changed:
+* added `showInTimesheet` to `/salary/type` this boolean value describes if if a salary type is applicable for timesheet or not
+
+New endpoint:
+* timesheet/salaryTypeSpecification (GET, POST, PUT DELETE):  
+Adding this endpoint has given us the possibility to log for instance overtime.
+
 ## 2.38.5 (2020-02-03)
 Webhooks for `create` (and similar) events are now triggered even when an update happens at the same time.
 Previously, only the `update` webhook was sent, skipping the `create` webhook.
