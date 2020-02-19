@@ -1,7 +1,10 @@
 # API changelog
 
 ## 2.39.1 (2020-02-19)
-* added DELETE method to `/purchaseOrder` endpoint
+Added new methods to `/purchaseOrder` endpoint:
+* POST
+* PUT
+* DELETE
 
 ## 2.39.0 (2020-02-13)
 End point changed:
