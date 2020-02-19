@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.39.1 (2020-02-19)
+* added DELETE method to `/purchaseOrder` endpoint
+
 ## 2.39.0 (2020-02-13)
 End point changed:
 * added `showInTimesheet` to `/salary/type` this boolean value describes if if a salary type is applicable for timesheet or not
