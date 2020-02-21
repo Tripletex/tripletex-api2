@@ -1,5 +1,14 @@
 # API changelog
 
+## 2.39.2 (2020-02-21)
+* Changes to `GET /timesheet/salaryTypeSpecification`. We have have removed query `date` in favour of `dateFrom` 
+(From and including) and `dateTo` (To and excluding).  This change is done to make the endpoint be more in line with 
+other timesheet endpoints like `/entry` for instance. This is not something we usually do but as  this endpoint is in beta 
+and only been released on week ago, it's a bit of now or never.
+
+* `CustomerDTO` change
+Allow multiple email addresses on invoice email, separated by ;
+
 ## 2.39.1 (2020-02-19)
 Added new methods to `/purchaseOrder` endpoint:
 * POST
@@ -11,7 +20,7 @@ End point changed:
 * added `showInTimesheet` to `/salary/type` this boolean value describes if if a salary type is applicable for timesheet or not
 
 New endpoint:
-* timesheet/salaryTypeSpecification (GET, POST, PUT DELETE):  
+* `timesheet/salaryTypeSpecification` (GET, POST, PUT DELETE):  
 Adding this endpoint has given us the possibility to log for instance overtime.
 
 ## 2.38.6 (2020-02-13)
