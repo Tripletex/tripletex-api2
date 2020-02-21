@@ -14,6 +14,7 @@
 
 - [Webhooks](docs/webhooks)
 - [Zapier app (beta)](docs/zapier)
+- [Checksum](examples/bash/checksum)
 
 ## Code examples
 
