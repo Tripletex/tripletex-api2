@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.39.2 (2020-02-25) 
+* New endpoint:
+`PUT /order/:invoiceMultipleOrders` Charges a single customer invoice from multiple orders. The orders must be to the same customer, currency, due date, receiver email and attn.
+
 ## 2.39.2 (2020-02-21)
 * Changes to `GET /timesheet/salaryTypeSpecification`. We have have removed query `date` in favour of `dateFrom` 
 (From and including) and `dateTo` (To and excluding).  This change is done to make the endpoint be more in line with 
