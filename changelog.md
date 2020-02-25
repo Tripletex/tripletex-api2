@@ -1,6 +1,6 @@
 # API changelog
 
-## 2.39.2 (2020-02-25) 
+## 2.39.3 (2020-02-25) 
 * New endpoint:
 `PUT /order/:invoiceMultipleOrders` Charges a single customer invoice from multiple orders. The orders must be to the same customer, currency, due date, receiver email and attn.
 
