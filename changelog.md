@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.40.1 (2020-03-11)
+* Added field `description` to `Product`.
+
 ## 2.40.0 (2020-03-10)
 New endpoints for goods receipt. Only available for users that have activated the Logistics/Logistics Pluss Beta-program:
 * `purchaseOrder/goodsReceipt` (GET, POST, PUT DELETE) 
