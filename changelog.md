@@ -1,4 +1,6 @@
 # API changelog
+## 2.40.2 (2020-03-12)
+* `VoucherDTO` Added validation on voucher type 
 
 ## 2.40.1 (2020-03-11)
 * Added field `description` to `Product`.
