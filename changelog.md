@@ -1,4 +1,8 @@
 # API changelog
+## 2.41.0 (2020-03-17)
+New endpoint added:
+* `purchaseOrder/orderline` (GET, POST, PUT, DELETE) 
+
 ## 2.40.2 (2020-03-12)
 * `VoucherDTO` Added validation on voucher type 
 
