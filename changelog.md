@@ -1,7 +1,11 @@
 # API changelog
+
 ## 2.41.0 (2020-03-17)
 New endpoint added:
 * `purchaseOrder/orderline` (GET, POST, PUT, DELETE) 
+
+## 2020-03-17
+* Session, consumer, and employee tokens generated on the test environment (api.tripletex.io) are now prefixed with `test-`, to easily distinguish them from production tokens.
 
 ## 2.40.2 (2020-03-12)
 * `VoucherDTO` Added validation on voucher type 
