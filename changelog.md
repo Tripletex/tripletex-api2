@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.41.1 (2020-03-18)
+`/address` endpoints are now deprecated and hidden. Prefer using `/deliveryAddress` for delivery addresses, or addresses through their parent objects, e.g. `/employee` or `/customer`. Existing integrations are not affected.
+
 ## 2.41.0 (2020-03-17)
 New endpoint added:
 * `purchaseOrder/orderline` (GET, POST, PUT, DELETE) 
