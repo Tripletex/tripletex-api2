@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.41.2 (2020-03-18)
+`/travelExpense/perDiemCompensation/autoSuggest` new internal endpoint that generates on the fly per diem compensations with auto-suggested data based on input and travel details without storing them in the database. ( POST )
+
 ## 2.41.1 (2020-03-18)
 `/address` endpoints are now deprecated and hidden. Prefer using `/deliveryAddress` for delivery addresses, or addresses through their parent objects, e.g. `/employee` or `/customer`. Existing integrations are not affected.
 
