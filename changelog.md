@@ -1,5 +1,10 @@
 # API changelog
 
+##2.42.0 (2020-04-03)
+New methods added for `purchaseOrder` endpoint: 
+* `/purchaseOrder/{id}/:send`
+* `/purchaseOrder/{id}/:sendByEmail`
+
 ## 2.41.2 (2020-03-18)
 `/travelExpense/perDiemCompensation/autoSuggest` new internal endpoint that generates on the fly per diem compensations with auto-suggested data based on input and travel details without storing them in the database. ( POST )
 
