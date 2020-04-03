@@ -1,6 +1,6 @@
 # API changelog
 
-##2.42.0 (2020-04-03)
+## 2.42.0 (2020-04-03)
 New methods added for `purchaseOrder` endpoint: 
 * `/purchaseOrder/{id}/:send`
 * `/purchaseOrder/{id}/:sendByEmail`
