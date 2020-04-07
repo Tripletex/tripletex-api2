@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.42.1 (2020-04-07)
+Small patch for `purchaseOrder` endpoint
+* Change name of the field `contact` to `ourContact` to be consistent with the GUI
+* Added field `supplierContact` 
+
 ## 2.42.0 (2020-04-03)
 New methods added for `purchaseOrder` endpoint: 
 * `/purchaseOrder/{id}/:send`
