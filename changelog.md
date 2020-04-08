@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.43.0 (2020-04-08)
+New endpoints added for product group:
+* `product/group` (GET, POST, PUT, DELETE) 
+* `product/groupRelation` (GET, POST, DELETE) 
+
 ## 2.42.1 (2020-04-07)
 Small patch for `purchaseOrder` endpoint
 * Change name of the field `contact` to `ourContact` to be consistent with the GUI
