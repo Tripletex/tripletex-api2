@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.43.1 (2020-04-16)
+Added `DEFAULT` send type parameter for `/purchaseOrder/{id}/:send` method 
+
 ## 2.43.0 (2020-04-08)
 New endpoints added for product group:
 * `product/group` (GET, POST, PUT, DELETE) 
