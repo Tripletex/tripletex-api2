@@ -21,7 +21,7 @@ apiHost="https://tripletex.no"
 proxyCompanyId=0
 
 # Session token expiration date
-sessionExpirationDate="2019-01-01"
+sessionExpirationDate="2022-01-01"
 
 # Make sure "jq" is installed
 if ! hash jq 2>/dev/null; then
