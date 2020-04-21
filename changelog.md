@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.44.0 (2020-04-21)
+Added `GET` for new endpoint `/travelExpense/zone` (find zone by id and search)
+Added new field `travelExpenseZoneId` to `/travelExpense/perDiemCompensation` endpoint in `PerDiemCompensationDTO`
+
 ## 2.43.1 (2020-04-16)
 Added `DEFAULT` send type parameter for `/purchaseOrder/{id}/:send` method 
 
