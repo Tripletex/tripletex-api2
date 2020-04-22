@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.44.1 (2020-04-22)
+Added `receiverEmail`, `discount`, `packingNoteMessage`, `transporterMessage`, `comments`, `attention` and `currency` fields to PurchaseOrder object 
+
 ## 2.44.0 (2020-04-21)
 Added `GET` for new endpoint `/travelExpense/zone` (find zone by id and search)
 Added new field `travelExpenseZoneId` to `/travelExpense/perDiemCompensation` endpoint in `PerDiemCompensationDTO`
