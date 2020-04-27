@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.45.0 (2020-04-27)
+* Added GET `/timesheet/month`, this gets the month status/overview for a specified month/employee combination or ID  
+* Added PUT `/timesheet/month` actions for complete, re-open, approve and un-approve based on a month/employee combination or ID
+ 
+
 ## 2.44.2 (2020-04-27)
 Added `DELETE` method to `product` endpoint.
 
