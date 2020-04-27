@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.44.2 (2020-04-27)
+Added `DELETE` method to `product` endpoint.
+
 ## 2.44.1 (2020-04-22)
 Added `receiverEmail`, `discount`, `packingNoteMessage`, `transporterMessage`, `comments`, `attention` and `currency` fields to PurchaseOrder object 
 
