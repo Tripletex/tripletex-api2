@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.45.1 (2020-05-05)
+* Improved PUT `/travelExpense/`to allow managing lists of perdiemCompensations ( creating / updating / deleting multiple perdiemCompensations in one request)
+
+
 ## 2.45.0 (2020-04-27)
 * Added GET `/timesheet/month`, this gets the month status/overview for a specified month/employee combination or ID  
 * Added PUT `/timesheet/month` actions for complete, re-open, approve and un-approve based on a month/employee combination or ID
