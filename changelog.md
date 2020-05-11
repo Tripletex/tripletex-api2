@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.45.2 (2020-05-11)
+* Added readonly field isInactive to Activity endpoint.
+
 ## 2.45.1 (2020-05-05)
 * Improved PUT `/travelExpense/`to allow managing lists of perdiemCompensations ( creating / updating / deleting multiple perdiemCompensations in one request)
 
