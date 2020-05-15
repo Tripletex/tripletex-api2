@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.46.1 (2020-05-15)
+Added fields `tollCost` and `passengerSupplement` to `MileageAllowanceDTO`
+
 ## 2.46.0 (2020-05-15)
 New endpoints for deviation on purchaseorder. Only available for users that have activated the Logistics Pluss Beta-program:
 * purchaseOrder/deviation (GET, POST, PUT DELETE)
