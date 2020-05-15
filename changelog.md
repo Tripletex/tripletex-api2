@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.46.0 (2020-05-15)
+New endpoints for deviation on purchaseorder. Only available for users that have activated the Logistics Pluss Beta-program:
+* purchaseOrder/deviation (GET, POST, PUT DELETE)
+* purchaseOrder/deviation/{id}/:approve
+* purchaseOrder/deviation/{id}/:deliver
+* purchaseOrder/deviation/{id}/:undeliver
+
 ## 2.45.2 (2020-05-11)
 * Added readonly field isInactive to Activity endpoint.
 
