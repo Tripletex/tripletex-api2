@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.46.2 (2020-05-18)
+Set the correct values of taxDeductionCode and isMainEmployer upon creating of employments if those fields are not sent to Tripletex.
+
 ## 2.46.1 (2020-05-15)
 Added fields `tollCost` and `passengerSupplement` to `MileageAllowanceDTO`
 
