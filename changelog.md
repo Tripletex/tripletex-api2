@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.46.3 (2020-06-04)
+* Added `invoiceComment` and `invoiceRemarks` to InvoiceDTO.
+
 ## 2.46.2 (2020-05-18)
 Set the correct values of taxDeductionCode and isMainEmployer upon creating of employments if those fields are not sent to Tripletex.
 
