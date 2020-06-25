@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.47.0 (2020-06-25)
+Added new `transportType` endpoint.
+
 ## 2.46.3 (2020-06-04)
 * Added `invoiceComment` and `invoiceRemarks` to InvoiceDTO.
 
