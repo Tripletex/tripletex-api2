@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.48.0 (2020-06-30)
+* Added `GET` for new endpoint `/balanceSheet` (get the balance sheet / saldobalanse for the specified parameters)
+
 ## 2.47.0 (2020-06-25)
 Added new `transportType` endpoint.
 
