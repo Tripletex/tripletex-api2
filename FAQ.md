@@ -33,7 +33,7 @@ If you want the orderlines related to the order as well you can expand the API r
 The order object can be set to either accept orderlines including VAT or excluding VAT with the optional boolean value isPrioritizeAmountsIncludingVat. If you encounter this issue it would be a good idea to provide the value directly when creating an order and then using the appropriate price value on orderlines for the order.
 
 Example:
-if order is set to isPrioritizeAmountsIncludingVat = true then you should provide orderlines with only amountIncludingVatCurrency and/or unitPriceIncludingVatCurrency.
+if order is set to isPrioritizeAmountsIncludingVat = true then you should provide orderlines with only unitPriceIncludingVatCurrency.
 
 ---
 
