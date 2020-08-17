@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.50.0 (2020-07-08)
+* Added new endpoint`/supplierInvoice/voucher/{id}/postings` (Put)
+
+## 2.49.0 (2020-07-06)
+* Added new endpoints `/voucherStatus` (get, post)
+
 ## 2.48.0 (2020-06-30)
 * Added `GET` for new endpoint `/balanceSheet` (get the balance sheet / saldobalanse for the specified parameters)
 
