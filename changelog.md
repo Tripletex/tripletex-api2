@@ -1,6 +1,6 @@
 # API changelog
 
-## 2.51.0 (2020-07-08)
+## 2.51.0 (2020-08-17)
 
 - Added new endpoint`/product/unit/master` with a list of Product Units (Get)
 
