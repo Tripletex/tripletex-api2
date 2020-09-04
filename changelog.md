@@ -3,7 +3,7 @@
 ## 2.54.0 (2020-09-04)
 
 - Add new API endpoint: `POST /invoice/list` which allows posting a list of Invoices, with Order and OrderLines embedded inside.
-- Allow embedding Orders and OrderLines inside an Invoice, when posting a new Invoice using the `POST /invoice` API endpoint.
+- Allow embedding new Orders and OrderLines inside an Invoice, when posting a new Invoice using the `POST /invoice` API endpoint.
 - API change: `paymentTypeId` and `paidAmount` added to InvoiceDTO. These are optional, and used to specify payment type and paid amount when posting a list of invoices.
 - API change: In OrderLineDTO, the `order` field is now optional. This is because now, a list of Invoices can be posted, where each Invoice contains a list of Orders, where each Order contains a list of OrderLines, embedded inside.
 
