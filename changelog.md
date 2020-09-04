@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.54.1 (2020-09-04)
+
+- Added phoneNumberWork to ContactDTO
+
 ## 2.54.0 (2020-09-04)
 
 - Add new API endpoint: `POST /invoice/list` which allows posting a list of Invoices, with new Order and OrderLines embedded inside.
