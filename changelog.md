@@ -7,6 +7,27 @@
 - API change: `paymentTypeId` and `paidAmount` added to InvoiceDTO. These are optional, and used to specify payment type and paid amount when posting a list of invoices.
 - API change: In OrderLineDTO, the `order` field is now optional. This is because now, a list of Invoices can be posted, where each Invoice contains a list of Orders, where each Order contains a list of OrderLines, embedded inside.
 
+Example of `POST /invoice/list`:
+```json  
+  [
+    {
+      "invoiceDate": "2020-09-02",
+      "invoiceDueDate" : "2020-09-12",
+      "orders" : [
+      {
+       "deliveryDate" : "2020-09-03",
+       "orderDate" : "2020-09-01",
+       "customer" : {"id" : 3001 },
+       "orderLines" : [{
+         "count" : 2,
+         "description" : "Example description"
+         }]
+       }
+     ]
+    }
+  ]
+```
+
 ## 2.53.0 (2020-08-24)
 
 - Added new endpoints for approving supplierInvoices `/supplierinvoice/:approve`,`/supplierinvoice/{id}/:approve`, `/supplierinvoice/{id}/:reject`, `/supplierinvoice/{id}/:addRecipient` all endpoints are PUT
