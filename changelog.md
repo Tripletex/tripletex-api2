@@ -2,7 +2,7 @@
 
 ## 2.54.1 (2020-09-04)
 
-- Added phoneNumberWork to ContactDTO
+- Added `phoneNumberWork` to `ContactDTO`
 
 ## 2.54.0 (2020-09-04)
 
@@ -34,7 +34,11 @@ Example of `POST /invoice/list`:
 
 ## 2.53.0 (2020-08-24)
 
-- Added new endpoints for approving supplierInvoices `/supplierinvoice/:approve`,`/supplierinvoice/{id}/:approve`, `/supplierinvoice/{id}/:reject`, `/supplierinvoice/{id}/:addRecipient` all endpoints are PUT
+- Added new endpoints for approving supplierInvoices:
+  - `PUT /supplierinvoice/:approve`
+  - `PUT /supplierinvoice/{id}/:approve`
+  - `PUT /supplierinvoice/{id}/:reject`
+  - `PUT /supplierinvoice/{id}/:addRecipient`
 
 ## 2.52.0 (2020-08-19)
 
