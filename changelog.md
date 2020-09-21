@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.54.2 (2020-09-21)
+
+- Add new API endpoint: `POST /order/list` which allows posting a list of Orders, with OrderLines embedded inside.
+
 ## 2.54.1 (2020-09-04)
 
 - Added `phoneNumberWork` to `ContactDTO`
