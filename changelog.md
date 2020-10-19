@@ -1,5 +1,16 @@
 # API changelog
 
+## 2.54.5 (2020-10-19)
+
+Made following changes to `/supplierInvoice`
+- Re-named field `number` to `invoiceNumber`
+- Added `commentFromOriginator` and `project` to VoucherApprovalListElementDTO
+- Made sure the order of the VoucherApprovalListElements are the same in the api as in the web application
+
+## 2.54.4 (2020-10-14)
+
+- Added new endpoints `DELETE /customer` and `DELETE /supplier`.
+
 ## 2.54.3 (2020-10-08)
 
 - Added tempNumber to VoucherDTO.
