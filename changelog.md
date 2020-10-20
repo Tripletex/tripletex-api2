@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.54.6 (2020-10-20)
+
+- Added language field to `/customer` endpoints for setting and getting language of customers
+
 ## 2.54.5 (2020-10-19)
 
 Made following changes to `/supplierInvoice`
