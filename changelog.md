@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.54.8 (2020-11-05)
+- Removed unused field `extraPercentOrderLines` in `/project
+
 ## 2.54.6 (2020-10-20)
 - Added `language` field to `/customer` endpoints
 
