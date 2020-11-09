@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.54.9 (2020-11-09)
+- Added the fields `creditedInvoice` and `isCredited` to the `/invoice` endpoints
+
 ## 2.54.8 (2020-11-05)
 - Removed unused field `extraPercentOrderLines` in `/project
 
