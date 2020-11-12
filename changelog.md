@@ -1,4 +1,6 @@
 # API changelog
+## 2.55.0 (2020-11-11)
+- Added new endpoint: `voucherMessage` (POST, GET)
 
 ## 2.54.9 (2020-11-09)
 - Added the fields `creditedInvoice` and `isCredited` to the `/invoice` endpoints
