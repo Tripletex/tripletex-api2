@@ -1,4 +1,10 @@
 # API changelog
+## 2.55.1 (2020-11-13)
+Updated existing and created new endpoints for changes in a-melding from January 2021:
+- Added field employmentEndReason  to /employment endpoint
+- Added field employmentForm to /employment/details endpoint
+- Added new endpoints /salary/settings/pensionScheme  (GET, PUT, POST, DELETE)
+
 ## 2.55.0 (2020-11-11)
 - Added new endpoint: `voucherMessage` (POST, GET)
 
