@@ -1,4 +1,8 @@
 # API changelog
+## 2.55.2 (2020-11-17)
+- Add field `preliminaryInvoice` to `OrderDTO`
+- Open `/Invoice` for preliminary invoices
+
 ## 2.55.1 (2020-11-13)
 Updated existing and created new endpoints for changes in a-melding from January 2021:
 - Added field employmentEndReason  to /employment endpoint
