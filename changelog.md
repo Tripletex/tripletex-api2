@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.0 (2020-11-18)
+- Added new endpoint: `product/productPrice` (GET)
+
 ## 2.55.2 (2020-11-17)
 - Add field `preliminaryInvoice` to `OrderDTO`
 - Open `/Invoice` for preliminary invoices
