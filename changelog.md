@@ -1,4 +1,8 @@
 # API changelog
+## 2.56.1 (2020-11-19)
+- Add `comment`, `message`, `externaObjectUrl` and `referenceNumber to `VoucherStatusDTO`
+- Add `attachments` to `OrderDTO`
+
 ## 2.56.0 (2020-11-18)
 - Added new endpoint: `product/productPrice` (GET)
 
