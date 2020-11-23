@@ -6,31 +6,11 @@ You can see the API2 endpoints for managing your WebHook subscriptions under **/
 
 ## List currently available events
 
-**The list of subscribable events is currently limited to a select few, but we are very happy to expand based on use-cases. The current list of events includes:**
+The list of subscribable events is currently limited to a select few, but we are very happy to expand based on use-cases. 
 
-- Invoice charged: `invoice.charged`
-- Order created: `order.create`
-- Order updated: `order.update`
-- Order deleted: `order.delete`
-- Product created: `product.create`
-- Product updated: `product.update`
-- Product deleted: `product.delete`
-- Voucher created: `voucher.create`
-- Voucher updated: `voucher.update` (also triggered when changing the voucher's postings!)
-- Voucher deleted: `voucher.delete`
-- Project created: `project.create`
-- Project updated: `project.update`
-- Project deleted: `project.delete`
-- Customer created: `customer.create`
-- Customer updated: `customer.update`
-- Customer deleted: `customer.delete`
-- Supplier created: `supplier.create`
-- Supplier updated: `supplier.update`
-- Supplier deleted: `supplier.delete`
-- Notification sent to employee: `notification.sent`
 - Let us know if you have any suggestions!
 
-It is also possible to see supported events from the API:
+To get the list of supported events from the API, make a request to GET `https://tripletex.no/v2/event`:
 
     curl -X GET --header 'Accept: application/json' --header 'Authorization: Basic <token>' 'https://tripletex.no/v2/event'
 
