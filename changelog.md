@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.2
+- Add EmployeeDTO as readonly property `sender` in `/voucherMessage` endpoint.
+
 ## 2.56.1 (2020-11-19)
 - Add `comment`, `message`, `externaObjectUrl` and `referenceNumber` to `VoucherStatusDTO` 
 - Add `attachments` to `OrderDTO`
@@ -27,6 +30,10 @@ Updated existing and created new endpoints for changes in a-melding from January
 
 ## 2.54.8 (2020-11-05)
 - Removed unused field `extraPercentOrderLines` in `/project
+
+## 2.54.7 (2020-11-01)
+- Made comment optional when approving voucher in `/supplierInvoice`
+- Corrected sorting order of elements in `voucherApprovalListElementDTO`
 
 ## 2.54.6 (2020-10-20)
 - Added `language` field to `/customer` endpoints
