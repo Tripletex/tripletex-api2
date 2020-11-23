@@ -1,5 +1,5 @@
 # API changelog
-## 2.56.2
+## 2.56.2 (2020-11-23)
 - Add EmployeeDTO as readonly property `sender` in `/voucherMessage` endpoint.
 
 ## 2.56.1 (2020-11-19)
