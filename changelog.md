@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.3 (2020-11-24)
+- Added new readonly postingType `INVOICE_EXPENSE` to `PostingDTO`
+
 ## 2.56.2 (2020-11-23)
 - Add EmployeeDTO as readonly property `sender` in `/voucherMessage` endpoint.
 
