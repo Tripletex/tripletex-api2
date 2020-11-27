@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.4 (2020-11-26)
+- Added new endpoint: `addPayment` to `SupplierInvoiceAPI`
+
 ## 2.56.3 (2020-11-24)
 - Added new readonly postingType `INVOICE_EXPENSE` to `PostingDTO`
 
