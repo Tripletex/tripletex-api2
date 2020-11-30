@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.5 (2020-11-30)
+- Added new endpoint to `order/orderLine` (PUT)
+
 ## 2.56.4 (2020-11-26)
 - Added new endpoint: `addPayment` to `SupplierInvoiceAPI`
 - Removed authorization on call to GET `/event`
