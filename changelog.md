@@ -1,4 +1,7 @@
 # API changelog
+## 2.56.6 (2020-12-02)
+- Added Attachment of earnings (tax) to `salary/compilation` endpoint
+
 ## 2.56.5 (2020-11-30)
 - Added new endpoint to `order/orderLine` (PUT)
 
