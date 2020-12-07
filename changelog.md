@@ -1,4 +1,9 @@
 # API changelog
+
+## 2.57.0 (2020-12-07)
+- Added new endpoint: product/logisticsSettings (GET, PUT)
+Only available for users that have activated the Logistics Pluss Beta-program
+
 ## 2.56.6 (2020-12-02)
 - Added Attachment of earnings (tax) to `salary/compilation` endpoint
 
