@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.57.1 (2020-12-08)
+- Added field `attention` to `ProjectDTO`
+- Added field `reference` to `ProjectDTO`
+- Can now set `contact` field in `ProjectDTO` (no longer readonly)
+
 ## 2.57.0 (2020-12-07)
 - Added new endpoint: product/logisticsSettings (GET, PUT)
 
