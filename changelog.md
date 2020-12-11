@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.2 (2020-12-11)
+- Added fields `orderLines` and `travelReports` to `InvoiceDTO`
+
 ## 2.57.1 (2020-12-08)
 - Added field `attention` to `ProjectDTO`
 - Added field `reference` to `ProjectDTO`
