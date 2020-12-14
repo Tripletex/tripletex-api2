@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.3 (2020-12-14)
+- Can now set `deliveryAddress` field in `ProjectDTO` (no longer readonly)
+
 ## 2.57.2 (2020-12-11)
 - Added fields `orderLines` and `travelReports` to `InvoiceDTO`
 
