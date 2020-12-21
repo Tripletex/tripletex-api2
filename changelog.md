@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.4 (2020-12-17)
+- Added new readonly postingType `OUTGOING_INVOICE_CUSTOMER_POSTING` to `PostingDTO`
+
 ## 2.57.3 (2020-12-14)
 - Can now set `deliveryAddress` field in `ProjectDTO` (no longer readonly)
 
