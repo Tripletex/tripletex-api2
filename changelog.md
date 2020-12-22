@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.5 (2020-12-22)
+- Removed deprecated field `deductions` from `SalaryCompilationDTO`, which affects `salary/compilation` endpoint
+
 ## 2.57.4 (2020-12-17)
 - Added new readonly postingType `OUTGOING_INVOICE_CUSTOMER_POSTING` to `PostingDTO`
 
