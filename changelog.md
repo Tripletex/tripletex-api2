@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.6 (2021-01-05)
+- Added query param `assignableProjectManagers` to `/employee` (GET) endpoint
+
 ## 2.57.5 (2020-12-22)
 - Removed deprecated field `deductions` from `SalaryCompilationDTO`, which affects `salary/compilation` endpoint
 
