@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.57.7 (2021-01-07)
+- Added field `invoiceComment` to `ProjectDTO`
+
 ## 2.57.6 (2021-01-05)
 - Added query param `assignableProjectManagers` to `/employee` (GET) endpoint
 
