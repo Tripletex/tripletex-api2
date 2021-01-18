@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.58.0 (2021-01-18)
+- Added new endpoint: product/inventoryLocation (GET, POST, PUT, DELETE)
+- Added field `inventoryLocation` to `GoodsReceiptLineDTO`, `OrderLineDTO` and `ProjectOrderLineDTO`
+Only available for users that have activated the Logistics Pluss Beta-program
+
 ## 2.57.7 (2021-01-07)
 - Added field `invoiceComment` to `ProjectDTO`
 
