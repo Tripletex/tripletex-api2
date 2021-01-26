@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.59.0 (2021-01-26)
+- The checksum feature is now only used if the client specifies the `If-None-Match` header
+
 ## 2.58.0 (2021-01-18)
 - Added new endpoint: product/inventoryLocation (GET, POST, PUT, DELETE)
 - Added field `inventoryLocation` to `GoodsReceiptLineDTO`, `OrderLineDTO` and `ProjectOrderLineDTO`
