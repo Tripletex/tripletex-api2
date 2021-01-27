@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.59.1 (2021-01-27)
+- Added new query params `typeOfVat` and `vatDate` on `GET /ledger/vatType`. If you for example specify `OUTGOING`
+as the type of VAT, you will only get VAT types that the company has access to (from the vat-settings of the company) and is of the provided type. 
+`vatDate` will default to today's date if not specified.
+- Added new field `legalVatTypes` on `AccountDTO`. This is a list of legal VAT types that you can use on the actual account. 
+
 ## 2.59.0 (2021-01-26)
 - The checksum feature is now only used if the client specifies the `If-None-Match` header
 
