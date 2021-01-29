@@ -69,3 +69,11 @@ Postman treats `:create` as a "Postman parameter", and not a part of the URL. Si
 A workaround is to manually specify `create` as a parameter with the value `:create`. The resolved URL will then be correct.
 
 ![Postman parameter workaround](assets/postman-parameters.png)
+
+---
+
+### How and when do you update currency values in Tripletex?
+
+### Answer:
+
+We fetch currency data at 0610 and 1810 every day from https://data.norges-bank.no/api/data/EXR/B..NOK.SP?format=csv&lastNObservations=14&locale=en
