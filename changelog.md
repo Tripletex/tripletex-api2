@@ -1,5 +1,16 @@
 # API changelog
 
+
+## 2.60.0 (2021-02-01)
+
+New resultbudget endpoints:
+
+- GET: `/resultbudget/company`
+- GET: `/resultbudget/department/{id}`
+- GET: `/resultbudget/project/{id}`
+- GET: `/resultbudget/product/{id}`
+- GET: `/resultbudget/employee/{id}`
+
 ## 2.59.1 (2021-01-27)
 - Added new query params `typeOfVat` and `vatDate` on `GET /ledger/vatType`. If you for example specify `OUTGOING`
 as the type of VAT, you will only get VAT types that the company has access to (from the vat-settings of the company) and is of the provided type. 
