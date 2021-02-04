@@ -1,6 +1,10 @@
 # API changelog
 
 
+## 2.60.1 (2021-02-04)
+
+- Added endpoint `ledger/voucher/>voucherReception`
+
 ## 2.60.0 (2021-02-01)
 
 New resultbudget endpoints:
