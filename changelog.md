@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.60.3 (2021-02-09)
+
+- New field in `POST /supplierInvoice/{invoiceId}/:addPayment` `partialPayment`. Adding multiple payments are now only possible when setting `partialPayment`to true.
+
 ## 2.60.2 (2021-02-09)
 
 - Deprecated field `bankAccounts` on `CustomerDTO` and `SupplierDTO`.
