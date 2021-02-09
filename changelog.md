@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.60.2 (2021-02-09)
+
+- Deprecated field `bankAccounts` on `CustomerDTO` and `SupplierDTO`.
+- Introduced new field `bankAccountPresentation` on `CustomerDTO` and `SupplierDTO`. This can now be used to create/update and
+read bankAccount information connected to a customer or supplier.
 
 ## 2.60.1 (2021-02-04)
 
