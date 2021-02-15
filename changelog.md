@@ -1,4 +1,9 @@
 # API changelog
+## 2.60.4 (2021-02-15)
+
+- New field in `GET /voucherStatus` field `status`. Make it possible to search for voucherStatuses filtered by status.
+- New field in `GET /voucherStatus` field `type`. Make it possible to search for voucherStatuses filtered by type.
+- Change `GET /invoice` field `voucherId` to take a comma separated list of voucherIds
 
 ## 2.60.3 (2021-02-09)
 
