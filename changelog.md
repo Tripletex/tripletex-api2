@@ -1,4 +1,9 @@
 # API changelog
+
+## 2.60.5 (2021-02-16)
+
+- New field in `GET /inventory/location` field `isInactive`. Makes it possible to search for InventoryLocations based active / inactive.
+
 ## 2.60.4 (2021-02-15)
 
 - New field in `GET /voucherStatus` field `status`. Make it possible to search for voucherStatuses filtered by status.
