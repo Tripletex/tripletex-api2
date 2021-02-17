@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.61.0 (2021-02-17)
+
+- Added model `PickupPoint`
+- Added `GET /pickupPoint`
+- Added `GET /pickupPoint/{id}`
+- Added field `pickupPoint` to `PurchaseOrder`
+
 ## 2.60.5 (2021-02-16)
 
 - New field in `GET /inventory/location` field `isInactive`. Makes it possible to search for InventoryLocations based active / inactive.
