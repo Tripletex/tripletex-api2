@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.62.0 (2021-02-18)
+
+- Added read-only field `document` to `PurchaseOrder`
+- Added read-only field `attachment` to `PurchaseOrder`
+- Added read-only field `ediDocument` to `PurchaseOrder`
+- Added `POST /purchaseOrder/{id}/attachment`
+
 ## 2.61.0 (2021-02-17)
 
 - Added model `PickupPoint`
