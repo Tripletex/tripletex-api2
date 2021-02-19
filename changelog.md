@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.62.1 (2021-02-19)
+- Added `basisPercentage` and `relativeVatType` to `VatTypeDTO`!
+
 ## 2.62.0 (2021-02-18)
 
 - Added read-only field `document` to `PurchaseOrder`
