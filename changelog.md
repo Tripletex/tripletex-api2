@@ -1,6 +1,13 @@
 # API changelog
 
+## 2.62.2 (2021-03-15)
+
+- New fields for search `GET /product/inventoryLocation`
+  - `inventoryId` filter based on Inventory ids
+  - `isMainLocation` filter based on InventoryLocation that are marked as main locations.
+
 ## 2.62.1 (2021-02-19)
+
 - Added `basisPercentage` and `relativeVatType` to `VatTypeDTO`!
 
 ## 2.62.0 (2021-02-18)
