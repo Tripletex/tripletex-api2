@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.63.0 (2021-03-17)
+
+- Bulk endpoints for `Subscription`
+  - `PUT /event/subscription/list`
+  - `POST /event/subscription/list`
+  - `DELETE /event/subscription/list`
+
 ## 2.62.2 (2021-03-15)
 
 - New fields for search `GET /product/inventoryLocation`
