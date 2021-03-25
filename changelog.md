@@ -4,7 +4,7 @@
 New GET `/project/template/{id}` endpoint
 
 ## 2.63.1(2021-03-23)
-New field for search GET `/inventory/inventoryLocation filter` based on `name`
+New field for search GET `/inventory/inventoryLocation` filter based on `name`
 
 ## 2.63.0 (2021-03-17)
 
