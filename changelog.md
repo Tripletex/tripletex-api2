@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.63.2(2021-03-25)
+New GET `/project/template/{id}` endpoint
+
+## 2.63.1(2021-03-23)
+New field for search GET `/inventory/inventoryLocation filter` based on `name`
+
 ## 2.63.0 (2021-03-17)
 
 - Bulk endpoints for `Subscription`
