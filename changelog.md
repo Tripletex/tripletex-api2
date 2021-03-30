@@ -1,10 +1,17 @@
 # API changelog
 
-## 2.63.2(2021-03-25)
-New GET `/project/template/{id}` endpoint
+## 2.63.3 (2021-03-30)
 
-## 2.63.1(2021-03-23)
-New field for search GET `/inventory/inventoryLocation` filter based on `name`
+- Added `department` to `Contact`
+- New field for search GET `/contact` filter based on `department`
+
+## 2.63.2 (2021-03-25)
+
+- New GET `/project/template/{id}` endpoint
+
+## 2.63.1 (2021-03-23)
+
+- New field for search GET `/inventory/inventoryLocation` filter based on `name`
 
 ## 2.63.0 (2021-03-17)
 
