@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.63.4 (2021-04-20)
+
+- Added field `costPercentage` to `ActivityDTO`
+
 ## 2.63.3 (2021-03-30)
 
 - Added `department` to `Contact`
