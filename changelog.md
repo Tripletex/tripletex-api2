@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.64.0 (2021-04-21)
+
+- Added `GET /project/controlFormType`
+- Added `GET /project/controlFormType/{id}`
+- Added `GET /project/settings`
+- Added `PUT /project/settings`
+
 ## 2.63.4 (2021-04-20)
 
 - Added field `costPercentage` to `ActivityDTO`
