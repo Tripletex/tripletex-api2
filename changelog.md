@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.65.0 (2021-05-03)
+
+- Added `POST /saft/importSAFT` for importing SAF-T files into Tripletex.
+
+
 ## 2.64.0 (2021-04-21)
 
 - Added `GET /project/controlFormType`
