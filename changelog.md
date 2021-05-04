@@ -1,5 +1,17 @@
 # API changelog
 
+## 2.66.0 (2021-05-04)
+- Added `GET /product/discountGroup`
+- Added `GET /product/discountGroup/{id}`- 
+- Added `POST /product/{id}/image`
+- Added `DELETE /product/{id}/image`
+- Added field `discountGroup` to `Product`
+- Added field `weight` to `Product`
+- Added field `weightUnit` to `Product`
+- Added field `volume` to `Product`
+- Added field `volumeUnit` to `Product`
+- Added field `image` to `Product`
+
 ## 2.65.0 (2021-05-03)
 
 - Added `POST /saft/importSAFT` for importing SAF-T files into Tripletex.
