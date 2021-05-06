@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.67.0 (2021-05-06)
+
+- Added `GET /saft/exportSAFT` for exporting a SAF-T file of the Tripletex account.
+
 ## 2.66.0 (2021-05-04)
 - Added `GET /product/discountGroup`
 - Added `GET /product/discountGroup/{id}`- 
