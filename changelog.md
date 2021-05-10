@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.68.0 (2021-05-07)
+- Added `POST /purchaseOrder/{id}/attachment/list`
+- Added `DELETE /purchaseOrder/{id}/attachment`
+
 ## 2.67.0 (2021-05-06)
 
 - Added `GET /saft/exportSAFT` for exporting a SAF-T file of the Tripletex account.
