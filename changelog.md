@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.68.1 (2021-05-19)
+- Added `GET /ledger/voucher/>externalVoucherNumber` to find vouchers based on the external voucher number. 
+
 ## 2.68.0 (2021-05-07)
 - Added `POST /purchaseOrder/{id}/attachment/list`
 - Added `DELETE /purchaseOrder/{id}/attachment`
