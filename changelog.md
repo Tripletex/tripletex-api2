@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.68.3 (2021-06-10)
+- Added field `isInactive` to `Department`
+
 ## 2.68.1 (2021-05-19)
 - Added `GET /ledger/voucher/>externalVoucherNumber` to find vouchers based on the external voucher number. 
 
