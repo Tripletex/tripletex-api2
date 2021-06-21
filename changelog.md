@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.68.4 (2021-06-21)
+- Added `PUT /supplierInvoice/{invoiceId}/:changeDimension` for changing of project, department, employee, and product on debit postings for a supplier invoice. 
+
 ## 2.68.3 (2021-06-10)
 - Added field `isInactive` to `Department`
 
