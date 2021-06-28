@@ -1,6 +1,6 @@
 # API changelog
 
-## 2.68.5
+## 2.68.5 (2021-06-28)
 - Added new query parameter `voucherDate` to `PUT /supplierInvoice/voucher/{id}/postings`. Allows changing the date of the voucher connected to this supplier invoice: "If set, the date of the voucher and the supplier invoice will be changed to this date. If empty, date will not be changed" 
 
 ## 2.68.4 (2021-06-21)
