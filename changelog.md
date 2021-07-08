@@ -1,5 +1,9 @@
 # API changelog
 
+
+## 2.68.9 (2021-07-01)
+- Added validation on `/employee/employment` for `startDate` so it can no longer be changed to after the `date` of the second `employmentDetails`
+
 ## 2.68.7 (2021-07-01)
 - Added query parameters `createOnAccount`, `amountOnAccount`, and `onAccountComment` to PUT `/order/{id}/:invoice`
 
