@@ -1,5 +1,6 @@
 # API changelog
-
+## 2.68.10 (2021-07-14)
+- Fixed bug that did not create orderLines if included in `POST /order`
 
 ## 2.68.9 (2021-07-01)
 - Added validation on `/employee/employment` for `startDate` so it can no longer be changed to after the `date` of the second `employmentDetails`
