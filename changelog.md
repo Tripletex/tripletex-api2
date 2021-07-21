@@ -1,4 +1,8 @@
 # API changelog
+## 2.68.11 (2021-07-21)
+- Added inventory id to response for `GET /inventory/inventories`
+
+# API changelog
 ## 2.68.10 (2021-07-14)
 - Fixed bug that did not create orderLines if included in `POST /order`
 
