@@ -1,4 +1,7 @@
 # API changelog
+## 2.68.13 (2021-08-12)
+- Added field "changedSince" to `GET /customer`
+
 ## 2.68.12 (2021-08-05)
 - Added field "createBackOrder" to '/order/{id}/:invoice'
 
