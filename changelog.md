@@ -1,4 +1,7 @@
 # API changelog
+## 2.68.14 (2021-08-23)
+- Fixed a bug in `POST /invoice/list` introduced in `2.68.10` where the operation would fail because of duplicate order creations.
+
 ## 2.68.13 (2021-08-12)
 - Added field "changedSince" to `GET /customer`
 
