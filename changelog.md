@@ -1,4 +1,6 @@
 # API changelog
+## 2.68.16 (2021-09-20)
+- Added field `sendMethodDescription` to `Order`
 
 ## 2.68.15 (2021-09-03)
 - Added field `externalRef` to `Posting`. The field contains an external reference for identifying payment basis of the posting, e.g., KID, customer identification or credit note number.
