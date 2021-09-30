@@ -1,7 +1,7 @@
 # API changelog
 ## 2.68.17 (2021-09-30)
 - Added field `canCreateBackorder` to `Order`
-- 
+
 ## 2.68.16 (2021-09-20)
 - Added field `sendMethodDescription` to `Order`
 
