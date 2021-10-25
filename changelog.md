@@ -1,4 +1,8 @@
 # API changelog
+## 2.68.18 (2021-10-25)
+- Added field `ledgerAccount` to `Customer` and `Supplier`
+  - This is used on `Multiple Ledgers` to specify ledger account on customers and suppliers. 
+
 ## 2.68.17 (2021-09-30)
 - Added field `canCreateBackorder` to `Order`
 
