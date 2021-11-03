@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.1 (2021-11-03)
+- Added field `useProductNetPrice` to `Project`
+- Added field `ignoreCompanyProductDiscountAgreement` to `Project`
 
 ## 2.69.0 (2021-10-27)
 - API endpoint for creating historical vouchers. These are vouchers created outside Tripletex, and should be from closed accounting years. The intended usage is to get access to historical transcations in Tripletex. Also creates postings. All amount fields in postings will be used. VAT postings must be included, these are not generated automatically like they are for normal vouchers in Tripletex.
