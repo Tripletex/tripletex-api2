@@ -1,4 +1,8 @@
 # API changelog
+
+## 2.69.3 (2021-11-15)
+- Added field `currency` to `Company`
+
 ## 2.69.2 (2021-11-05)
 - Added new query parameters `paidAmountAccountCurrency`, `paymentTypeIdRestAmount` and `paidAmountAccountCurrencyRest` to `POST /order/{id}/:invoice`. 
 This is to support prepaid amount where invoice currency is different to payment account currency and to support prepaid amount with two different payment types.
