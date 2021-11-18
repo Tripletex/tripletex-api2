@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.4 (2021-11-16)
+- Added field `invoiceOnAccountVatHigh` to `Order`
+- Added field `totalInvoicedOnAccountAmountAbsoluteCurrency` to `Order`
 
 ## 2.69.3 (2021-11-15)
 - Added field `currency` to `Company`
