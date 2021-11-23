@@ -1,0 +1,4 @@
+firstname,lastname,email,dateOfBirth,userType,startDate,percentageOfFullTimeEquivalent
+Dave,Lister,dave_lister@reddwarf.com,1990-10-14,STANDARD,2020-01-01,100
+Arnold,Rimmer,arnold_rimmer@reddwarf.com,1990-03-15,STANDARD,2020-01-01,100
+Cat,Felix,cat_felix@reddwarf.com,1990-11-28,STANDARD,2020-01-01,100
