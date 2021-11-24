@@ -1,4 +1,8 @@
 # API changelog
+## 2.69.5 (2021-11-24)
+- Added parameter `AVTALEGIRO` to the URL parameter `sendType` for the endpoint `PUT /invoice/{id}/:send`.
+- This allows integrations to send invoices as AvtaleGiro.
+
 ## 2.69.4 (2021-11-16)
 - Added field `invoiceOnAccountVatHigh` to `Order`
 - Added field `totalInvoicedOnAccountAmountAbsoluteCurrency` to `Order`
