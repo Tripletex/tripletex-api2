@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.6 (2022-01-26)
+- Removed field `employee` from `Address`.
+
 ## 2.69.5 (2021-11-24)
 - Added parameter `AVTALEGIRO` to the URL parameter `sendType` for the endpoint `PUT /invoice/{id}/:send`.
 - This allows integrations to send invoices as AvtaleGiro.
