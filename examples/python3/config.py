@@ -1,8 +1,8 @@
 base_url = '<BASE_URL>'
 consumer_token = '<CONSUMER_TOKEN>'
-employee_token = 'EMPLOYEE_TOKEN'
+employee_token = '<EMPLOYEE_TOKEN>'
 
-expiration_date = 'EXPIRATION_DATE'
+expiration_date = '<EXPIRATION_DATE>'
 
 class Config():
     def __init__(self):
