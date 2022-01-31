@@ -123,6 +123,21 @@ class Tripletex:
         r = requests.post(f'{self.base_url}/invoice', data=json.dumps(payload), auth=self.auth, headers=self.headers)
         return self.map(r)
 
+# department
+    def get_departments(self, fields=''):
+        params = {'fields': fields}
+        r = requests.get(f'{self.base_url}/department', params=params, auth=self.auth)
+        return self.map(r)
+        
+    def create_department(self, payload):
+        r = requests.post(f'{self.base_url}/department', data=json.dumps(payload), auth=self.auth, headers=self.headers)
+        return self.map(r)
+
+    def get_department_by_id(self, id, fields=''):
+        params = {'fields': fields}
+        r = requests.get(f'{self.base_url}/department/{id}', params=params, auth=self.auth)
+        return self.map(r)
+
 # helpers
     @staticmethod
     def map(responce):
