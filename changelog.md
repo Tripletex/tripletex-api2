@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.7 (2022-02-09)
+- Added `sequance` in `TravelCostCategoryDTO`
+
 ## 2.69.6 (2022-01-26)
 - Removed field `employee` from `Address`.
 
