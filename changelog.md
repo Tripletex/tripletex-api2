@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.8 (2022-02-17)
+- Added parameters `accountNumberFrom` and `accountNumberFrom` to /ledger/posting to specify account interval.
+
 ## 2.69.7 (2022-02-10)
 - Added field `sequence` to `TravelCostCategoryDTO`.
 
