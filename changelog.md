@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.9 (2022-02-18)
+- Added field `isFactoring` to `Customer`.
+
 ## 2.69.8 (2022-02-17)
 - Added parameters `accountNumberFrom` and `accountNumberTo` to /ledger/posting to specify account interval for posting to search for.
 
