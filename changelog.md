@@ -2,9 +2,6 @@
 ## 2.69.9 (2022-02-18)
 - Added field `isFactoring` to `Customer`.
 
-## 2.69.8 (2022-02-17)
-- Added parameters `accountNumberFrom` and `accountNumberTo` to /ledger/posting to specify account interval for posting to search for.
-
 ## 2.69.7 (2022-02-10)
 - Added field `sequence` to `TravelCostCategoryDTO`.
 
