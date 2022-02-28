@@ -1,4 +1,17 @@
 # API changelog
+## 2.69.10 (2022-02-28)
+- Added new PurchaseOrderline endpoints:
+  - `POST /purchaseOrder/orderline/list`
+  - `PUT /purchaseOrder/orderline/list`
+  - `DELETE /purchaseOrder/orderline/list`
+- Added new fields to PurchaseOrder:
+  - `internalComment`
+  - `receivedDate`
+  - `lastSentTimestamp`
+  - `lastSentEmployeeName`
+- Added new field to PurchaseOrderline:
+  - `unitListPriceCurrency`
+ 
 ## 2.69.9 (2022-02-18)
 - Added field `isFactoring` to `Customer`.
 
