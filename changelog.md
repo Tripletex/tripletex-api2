@@ -1,4 +1,11 @@
 # API changelog
+## 2.69.11 (2022-03-03)
+- New field in CurrencyDTO 
+    - `isDisabled`
+- New field in ProductPriceDTO
+    - `purchasePriceCurrency`
+- Added parameter `showOnlyLastPrice` to `GET product\price` method
+
 ## 2.69.10 (2022-02-28)
 - Added new PurchaseOrderline endpoints:
   - `POST /purchaseOrder/orderline/list`
