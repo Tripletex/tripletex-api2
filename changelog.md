@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.12 (2022-03-21)
+- Added endpoint for ResourcePlanBudget
+  - `GET /project/resourcePlanBudget`
 ## 2.69.11 (2022-03-03)
 - New field in CurrencyDTO 
     - `isDisabled`
