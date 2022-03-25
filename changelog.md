@@ -1,4 +1,8 @@
 # API changelog
+## 2.69.13 (2022-03-22)
+- Added new field in SupplierDTO:
+  - `isEfoNelfoMerchant`
+
 ## 2.69.12 (2022-03-21)
 - Added endpoint for ResourcePlanBudget
   - `GET /project/resourcePlanBudget`
