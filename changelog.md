@@ -1,6 +1,6 @@
 # API changelog
 ## 2.69.14 (2022-04-01)
-- Updated endpoint product/external with tag `internal`.
+- Deprecated `GET product/external` endpoint please use `GET product/external/query` or `GET product/external/{id}`.
 
 ## 2.69.13 (2022-03-22)
 - Added new field in SupplierDTO:
