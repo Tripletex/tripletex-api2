@@ -1,4 +1,8 @@
 # API changelog
+## 2.69.15 (2022-04-04)
+- Added new field in VoucherDTO:
+  - `supplierVoucherType`
+ 
 ## 2.69.14 (2022-04-01)
 - Deprecated `GET product/external` endpoint please use `GET product/external/query` or `GET product/external/{id}`.
 
