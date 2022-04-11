@@ -1,6 +1,10 @@
 # API changelog
+## 2.69.17 (2022-04-08)
+- Added field saftCode to ledger/account POST , GET and PUT
+
 ## 2.69.16 (2022-04-07)
 - Added field externalVoucherNumber to ledger/voucher POST and PUT
+
 ## 2.69.15 (2022-04-04)
 - Added new field in VoucherDTO:
   - `supplierVoucherType`
