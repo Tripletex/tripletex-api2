@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.18 (2022-04-26)
+- Added webhooks for account.create, account.update and account.delete
+
 ## 2.69.17 (2022-04-08)
 - Added field saftCode to ledger/account POST , GET and PUT
 
