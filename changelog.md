@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.19 (2022-05-04)
+- New field for search GET `/employee` filter based on `email`
+
 ## 2.69.18 (2022-04-26)
 - Added webhooks for account.create, account.update and account.delete
 
