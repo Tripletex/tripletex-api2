@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.20 (2022-06-10)
+- Deprecated `discountPrice` from `Product` resource  
+
 ## 2.69.19 (2022-05-04)
 - New field for search GET `/employee` filter based on `email`
 
