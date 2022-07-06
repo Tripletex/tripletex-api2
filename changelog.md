@@ -1,4 +1,11 @@
 # API changelog
+
+## 2.69.21 (2022-07-06)
+- New field in ProductDTO 
+    - `mainSupplierProduct`
+- New field in SupplierProductDTO
+    - `isMainSupplierProduct`
+   
 ## 2.69.20 (2022-06-10)
 - Deprecated `discountPrice` from `Product` resource  
 
