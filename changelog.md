@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.69.22 (2022-07-08)
+- Added new endpoint: `DELETE /contact/list`. It takes a comma separated list of contacts ids
+
 ## 2.69.21 (2022-07-06)
 - New field in ProductDTO 
     - `mainSupplierProduct`
