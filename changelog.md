@@ -1,4 +1,6 @@
 # API changelog
+## 2.69.23 (2022-09-02)
+- Added fields requiresDepartment and requiresProject to AccountDTO
 
 ## 2.69.22 (2022-07-08)
 - Added new endpoint: `DELETE /contact/list`. It takes a comma separated list of contacts ids
