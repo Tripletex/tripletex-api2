@@ -1,4 +1,7 @@
 # API changelog
+## 2.69.24 (2022-09-05)
+- Added endpoint DrivingStop (post, get, delete)
+
 ## 2.69.23 (2022-09-02)
 - Added fields requiresDepartment and requiresProject to AccountDTO
 
