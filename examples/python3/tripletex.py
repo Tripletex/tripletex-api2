@@ -107,6 +107,9 @@ class Tripletex:
         r = requests.post(f'{self.base_url}/product', data=json.dumps(payload), auth=self.auth, headers=self.headers)      
         return self.map(r)
         
+    def update_product(self, id, payload):
+        r = requests.put(f'{self.base_url}/product/{id}', data=json.dumps(payload), auth=self.auth, headers=self.headers)      
+        return self.map(r)
  
  # customer
     def create_customer(self, payload):
