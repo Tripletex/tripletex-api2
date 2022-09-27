@@ -1,4 +1,8 @@
 # API changelog
+## 2.69.25 (2022-09-27)
+- Added endpoints for CompanyStandardTime: `salary/settings/standardTime`
+- Added new endpoint `GET employee/standardTime/byDate`
+
 ## 2.69.24 (2022-09-05)
 - Added endpoint DrivingStop (post, get, delete)
 
