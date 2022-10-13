@@ -1,4 +1,11 @@
 # API changelog
+## 2.69.27 (2022-10-13)
+- Added new internal fields for `ProductLineDTO`: `counted`, `counter`, `dateCounted` and `expectedStock` 
+- Added new read-only field for `ProductLineDTO`: `location`
+
+## 2.69.26 (2022-10-10)
+- Added new query params `query` and `productGroupIds` for search method in `ProductLineAPI`
+
 ## 2.69.25 (2022-09-27)
 - Added endpoints for CompanyStandardTime: `salary/settings/standardTime`
 - Added new endpoint `GET employee/standardTime/byDate`
