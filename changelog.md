@@ -1,4 +1,7 @@
 # API changelog
+## 2.70.1 (2022-10-24)
+- Deprecating `isDeletable` field in `product` endpoint. Field will always return false for other consumers then Tripletex Web or App.
+
 ## 2.70.0 (2022-10-24)
 - Added new endpoint fore reading, creating and deleting opening balances: 'ledger/voucher/openingBalance' with GET, POST and DELETE. The opening balance is a starting point for accounting in Tripletex, where existing balance and sub-ledger values can be defined.
 
