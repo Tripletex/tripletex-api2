@@ -1,4 +1,7 @@
 # API changelog
+## 2.70.0 (2022-10-24)
+- Added new endpoint fore reading, creating and deleting opening balances: 'ledger/voucher/openingBalance' with GET, POST and DELETE. The opening balance is a starting point for accounting in Tripletex, where existing balance and sub-ledger values can be defined.
+
 ## 2.69.27 (2022-10-13)
 - Added new internal fields for `ProductLineDTO`: `counted`, `counter`, `dateCounted` and `expectedStock` 
 - Added new read-only field for `ProductLineDTO`: `location`
