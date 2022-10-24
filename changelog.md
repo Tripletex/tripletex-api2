@@ -1,4 +1,8 @@
 # API changelog
+
+## 2.70.2 (2022-10-24)
+- End-point order/:id/invoice now supports send-type
+
 ## 2.70.1 (2022-10-24)
 - Deprecating `isDeletable` field in `product` endpoint. Field will always return false for other consumers then Tripletex Web or App.
 
