@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.4 (2022-10-25)
+- Deprecating `typeOfStocktaking` field in `/inventory/stocktaking`
+
 ## 2.70.3 (2022-10-25)
 - `POST order/:invoiceMultipleOrders` supports field `sendToCustomer`
 
