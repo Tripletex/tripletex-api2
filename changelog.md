@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.3 (2022-10-25)
+- `POST order/:invoiceMultipleOrders` supports field `sendToCustomer`
+
 ## 2.70.2 (2022-10-24)
 - `POST order/:id/invoice` supports fields `sendType` and `overrideEmailAddress`
 
