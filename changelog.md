@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.5 (2022-11-14)
+- Extended `employee/preferences` with PUT/POST/DELETE
+
 ## 2.70.4 (2022-10-25)
 - Deprecating `typeOfStocktaking` field in `/inventory/stocktaking`
 
