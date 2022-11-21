@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.5 (2022-11-21)
+- Added endpoint for downloading reminder pdf: `/reminder/{reminderId}/pdf`
+
 ## 2.70.4 (2022-10-25)
 - Deprecating `typeOfStocktaking` field in `/inventory/stocktaking`
 
