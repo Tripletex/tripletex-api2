@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.7 (2022-12-14)
+- New field invoicingDepartment in AccountDTO
+
 ## 2.70.5 (2022-11-21)
 - Added endpoint for downloading reminder pdf: `/reminder/{reminderId}/pdf`
 
