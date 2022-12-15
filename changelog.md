@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.70.8 (2022-12-14)
+- Added new endpoint: `GET /employee/employment/occupationCode/{id}`
+- New field for search `GET /employee/employment/occupationCode`
+- `id` filter based on OccupationCode ids
+
 ## 2.70.7 (2022-12-14)
 - New field invoicingDepartment in AccountDTO
 
