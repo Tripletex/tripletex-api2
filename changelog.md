@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.9 (2022-12-16)
+- Add "query" param for `GET /inventory` to be able searching by name
+
 ## 2.70.8 (2022-12-14)
 - Added new endpoint: `GET /employee/employment/occupationCode/{id}`
 - New field for search `GET /employee/employment/occupationCode`
