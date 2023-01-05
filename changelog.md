@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.10 (2023-01-05)
+- New field in PurchaseOrderlineDTO 
+    - `supplierProduct`
+
 ## 2.70.9 (2022-12-16)
 - Add "query" param for `GET /inventory` to be able searching by name
 
