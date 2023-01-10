@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.11 (2023-01-10)
+- New field in SupplierInvoiceDTO 
+    - `outstandingAmount`
+
 ## 2.70.10 (2023-01-05)
 - New field in PurchaseOrderlineDTO 
     - `supplierProduct`
