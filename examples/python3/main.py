@@ -14,9 +14,9 @@ client = Tripletex.from_config(config)
 
 def create_emps(department_id):
     """
-    Create employees from cvs file
+    Create employees from csv file
     """
-    with open('employees.cvs', mode='r') as csv_file:
+    with open('employees.csv', mode='r') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:        
             print(f'\tcreating {row["firstname"]} {row["lastname"]} ...')
@@ -100,7 +100,7 @@ if (__name__ == '__main__'):
     department = create_department('The Fun Dept').value
     print(f">> department '{department.name}' has been created with department id '{department.id}'")
 
-    print('>> creating employees from cvs file')
+    print('>> creating employees from csv file')
     create_emps(department_id=department.id)
  
     print(">> creating product")
