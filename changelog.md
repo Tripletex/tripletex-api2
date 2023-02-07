@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.70.12 (2023-02-07)
+- Added PUT endpoint for EmployeePreferences
+- New field in EmployeePreferencesDTO
+    - `language`
+
 ## 2.70.11 (2023-01-10)
 - New field in SupplierInvoiceDTO 
     - `outstandingAmount`
