@@ -1,4 +1,6 @@
 # API changelog
+## 2.70.14 (2023-02-10)
+Added sendToCustomer param to the invoice endpoint :createCreditNote
 
 ## 2.70.12 (2023-02-07)
 - Added PUT endpoint for EmployeePreferences
