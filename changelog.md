@@ -1,4 +1,7 @@
 # API changelog
+## 2.70.15 (2023-02-15)
+- Updated InvoiceDTO by adding a new InvoiceRemarkDTO and deprecating the old invoiceRemarks field.
+
 ## 2.70.14 (2023-02-10)
 Added sendToCustomer param to the invoice endpoint :createCreditNote
 
