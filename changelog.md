@@ -1,4 +1,7 @@
 # API changelog
+## 2.70.17 (2023-03-01)
+- Added new endpoint `GET municipality/query`
+
 ## 2.70.15 (2023-02-15)
 - Updated InvoiceDTO by adding a new InvoiceRemarkDTO and deprecating the old invoiceRemarks field.
 
