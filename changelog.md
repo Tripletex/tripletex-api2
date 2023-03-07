@@ -1,4 +1,8 @@
 # API changelog
+
+## 2.70.18 (2023-03-07)
+- `stockOfGoods` from `Product` resource will only be available on demand 
+
 ## 2.70.17 (2023-03-01)
 - Added new endpoint `GET municipality/query`
 
