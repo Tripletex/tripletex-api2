@@ -1,5 +1,9 @@
 # API changelog
 
+
+## 2.70.19 (2023-03-14)
+- Added to depreciationAccountId, lifetimeInMonths, incomingBalance, accumulatedDepreciation to Asset.
+
 ## 2.70.18 (2023-03-07)
 - `stockOfGoods` from `Product` resource will only be available on demand 
 
