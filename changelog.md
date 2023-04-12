@@ -1,6 +1,9 @@
 # API changelog
 
 
+## 2.70.20 (2023-03-27)
+- Added /asset/upload API endpoint for importing assets in Excel format.
+
 ## 2.70.19 (2023-03-14)
 - Added to depreciationAccountId, lifetimeInMonths, incomingBalance, accumulatedDepreciation to Asset.
 
