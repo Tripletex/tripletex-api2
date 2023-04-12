@@ -1,5 +1,6 @@
 # API changelog
-
+## 2.70.21 (2023-04-12)
+- Added DELETE endpoint to `Order`
 
 ## 2.70.20 (2023-03-27)
 - Added /asset/upload API endpoint for importing assets in Excel format.
