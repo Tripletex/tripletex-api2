@@ -1,4 +1,7 @@
 # API changelog
+## 2.70.30 (2023-04-12)
+- Change "Send PO by email" API to send data as `body` istead of `Query Params`
+- 
 ## 2.70.21 (2023-04-12)
 - Added DELETE endpoint to `Order`
 
