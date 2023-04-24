@@ -1,4 +1,11 @@
 # API changelog
+
+## 2.70.40 (2023-04-24)
+- Added endpoints to upload and delete attachments on salary
+  - PUT `/salary/transaction/{id}/attachment`
+  - POST `/salary/transaction/3746350/attachment/list`
+  - POST `/salary/transaction/3746350/attachment`
+
 ## 2.70.30 (2023-04-12)
 - Change "Send PO by email" API to send data as `body` istead of `Query Params`
 - 
