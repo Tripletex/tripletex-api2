@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.41 (2023-04-28)
+- Add API endpoint for searching for result budgets for multiple projects, departments, employees or products.
+  - GET `/resultbudget`
+
 ## 2.70.40 (2023-04-24)
 - Added endpoints to upload and delete attachments on salary
   - PUT `/salary/transaction/{id}/attachment`
