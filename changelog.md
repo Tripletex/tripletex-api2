@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.42 (2023-05-04)
+- Add new field `discountPercentage` to `CustomerDTO`
+
 ## 2.70.41 (2023-04-28)
 - Add API endpoint for searching for result budgets for multiple projects, departments, employees or products.
   - GET `/resultbudget`
