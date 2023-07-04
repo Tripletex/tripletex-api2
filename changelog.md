@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.43 (2023-07-04)
+- Add new field `OrderGroups` to `OrderDTO`
+- Add new query param `updateLinesAndGroups` to `PUT /Order/{id}`
+
 ## 2.70.42 (2023-05-04)
 - Add new field `discountPercentage` to `CustomerDTO`
 
