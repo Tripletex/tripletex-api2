@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.70.44 (2023-07-20)
+- Add new field `status` to `OrderDTO`
+- Add new field `website` to `CustomerDTO`
+- Add new field `website` to `SupplierDTO`
+
 ## 2.70.43 (2023-07-04)
 - Add new field `OrderGroups` to `OrderDTO`
 - Add new query param `updateLinesAndGroups` to `PUT /Order/{id}`
