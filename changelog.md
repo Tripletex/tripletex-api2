@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.45 (2023-08-24)
+- Add new field `discountPercentage` to `OrderDTO`
+- Add new field `markUpOrderLines` to `OrderDTO`
+
 ## 2.70.44 (2023-07-20)
 - Add new field `status` to `OrderDTO`
 - Add new field `website` to `CustomerDTO`
