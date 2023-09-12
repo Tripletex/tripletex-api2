@@ -29,8 +29,8 @@ class Tripletex:
         r = requests.put(f'{self.base_url}/token/session/:create', params=params)
         if (r.status_code == 200):
             return self.map(r)
-        else:
-            print(r.status_code, r.text, r.reason)
+
+        raise Exception(r.status_code, r.text, r.reason)
 
     def authenticate(self, session_token):
         return HTTPBasicAuth('0', session_token)
@@ -70,7 +70,7 @@ class Tripletex:
     def get_country_by_id(self, country_id, fields=''):
         params = {'fields': fields}
         r = requests.get(f'{self.base_url}/country/{country_id}', params=params, auth=self.auth)
-        return self.map(r) 
+        return self.map(r)
 
 # project
     def get_projects(self, fields=''):
@@ -99,15 +99,14 @@ class Tripletex:
 
 # product
     def get_product_by_id(self, id, fields=''):
-        params = {'fields': fields} 
+        params = {'fields': fields}
         r = requests.get(f'{self.base_url}/product/{id}', params=params, auth=self.auth)
         return self.map(r)
 
     def create_product(self, payload):
-        r = requests.post(f'{self.base_url}/product', data=json.dumps(payload), auth=self.auth, headers=self.headers)      
+        r = requests.post(f'{self.base_url}/product', data=json.dumps(payload), auth=self.auth, headers=self.headers)
         return self.map(r)
-        
- 
+
  # customer
     def create_customer(self, payload):
         r = requests.post(f'{self.base_url}/customer', data=json.dumps(payload), auth=self.auth, headers=self.headers)
@@ -128,7 +127,7 @@ class Tripletex:
         params = {'fields': fields}
         r = requests.get(f'{self.base_url}/department', params=params, auth=self.auth)
         return self.map(r)
-        
+
     def create_department(self, payload):
         r = requests.post(f'{self.base_url}/department', data=json.dumps(payload), auth=self.auth, headers=self.headers)
         return self.map(r)
@@ -140,6 +139,6 @@ class Tripletex:
 
 # helpers
     @staticmethod
-    def map(responce):
-        data = json.dumps(responce.json())
+    def map(response):
+        data = json.dumps(response.json())
         return json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
