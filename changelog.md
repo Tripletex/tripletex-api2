@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.46 (2023-09-15)
+-  Add new field `isRemoveAccessAtEmploymentEnded` to `EmploymentDTO`
+
 ## 2.70.45 (2023-08-24)
 - Add new field `discountPercentage` to `OrderDTO`
 - Add new field `markUpOrderLines` to `OrderDTO`
