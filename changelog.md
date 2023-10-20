@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.47 (2023-10-20)
+- Added ordering to `department/query` (orders by number, then by name)
+
 ## 2.70.46 (2023-09-15)
 -  Add new field `isRemoveAccessAtEmploymentEnded` to `EmploymentDTO`
 
