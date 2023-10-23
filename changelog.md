@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.48 (2023-10-23)
+- Added `POST /contact/list` endpoint for batch creating new contacts
+
 ## 2.70.47 (2023-10-20)
 - Added ordering to `department/query` (orders by number, then by name)
 
