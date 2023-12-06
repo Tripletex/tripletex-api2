@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.50 (2023-12-06)
+- Add new field `department` to `AccountDTO`
+
 ## 2.70.48 (2023-10-23)
 - Added `POST /contact/list` endpoint for batch creating new contacts
 
