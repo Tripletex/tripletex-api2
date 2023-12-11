@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.51 (2023-12-11)
+- Add API endpoint /vatTermSizeSettings for specifying VAT term sizes.
+
 ## 2.70.50 (2023-12-06)
 - Add new field `department` to `AccountDTO`
 
