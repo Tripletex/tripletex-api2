@@ -7,10 +7,11 @@
   - [Register new test integration](https://api.tripletex.io/execute/integrationEnvironment?site=en)
 - [Changelog](changelog.md)
 - [Frequently asked questions](FAQ.md)
-- [About API 2.0](https://www.tripletex.no/tripletex-api-2-0/)
+- [API2 Homepage](https://developer.tripletex.no/)
 
 ## Documentation
 
+- [General](https://developer.tripletex.no/docs/documentation/)
 - [Webhooks](docs/webhooks)
 - [Zapier app (beta)](docs/zapier)
 - [Checksum](examples/bash/checksum)
