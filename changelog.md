@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.70.52 (2024-01-17)
-  - Add new fields in `TravelExpenseDTO`
+  - Add new fields in `TravelExpenseZoneDTO`
     - `fromDate` (inclusive)
     - `toDate` (inclusive)
     - `currencyId`
