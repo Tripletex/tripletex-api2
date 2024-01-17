@@ -1,5 +1,15 @@
 # API changelog
 
+## 2.70.52 (2024-01-17)
+  - Add new fields in `TravelExpenseDTO`
+    - `fromDate` (inclusive)
+    - `toDate` (inclusive)
+    - `currencyId`
+- Add new query params to `GET /travelExpense/zone`
+    - `date`, getting the valid zones based on `fromDate` and `toDate`
+    - `query`, searching by `countryCode` or `zoneName`
+- New ordering of `GET /travelExpense/zone` based on `zoneName`
+
 ## 2.70.51 (2023-12-11)
 - Add API endpoint /vatTermSizeSettings for specifying VAT term sizes.
 
