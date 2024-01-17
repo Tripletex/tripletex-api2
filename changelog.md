@@ -9,6 +9,7 @@
     - `date`, getting the valid zones based on `fromDate` and `toDate`
     - `query`, searching by `countryCode` or `zoneName`
 - New ordering of `GET /travelExpense/zone` based on `zoneName`
+- New API for all available Pension Providers `/pension` that can be connected to `/salary/settings/pensionScheme`
 
 ## 2.70.51 (2023-12-11)
 - Add API endpoint /vatTermSizeSettings for specifying VAT term sizes.
