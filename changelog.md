@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.70.53 (2024-01-23)
-- Changes to GET /company/settings/altinn, now returns "***********" when the company has AltinnLogin
+- Changes to `GET /company/settings/altinn`, now returns "***********" when the company has an AltinnPassword
 
 ## 2.70.52 (2024-01-17)
   - Add new fields in `TravelExpenseZoneDTO`
