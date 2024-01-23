@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.53 (2024-01-23)
+- Changes to AltinnApi, now get returns "***********" when the company has AltinnLogin
+
 ## 2.70.52 (2024-01-17)
   - Add new fields in `TravelExpenseZoneDTO`
     - `fromDate` (inclusive)
