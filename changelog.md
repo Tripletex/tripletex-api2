@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.54 (2024-02-26)
+- Added new field `rackbeatAgreementNumber` to `LogisticsSettingsDTO`
+
 ## 2.70.53 (2024-01-23)
 - Changes to `GET /company/settings/altinn`, now returns "***********" when the company has an AltinnPassword
 
