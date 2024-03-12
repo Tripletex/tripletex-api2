@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.55 (2024-03-12)
+- New field in `OrderLine` object called `orderedQuantity`, that can be used by the Logistics customers who have the Backorder functionality activated 
+
 ## 2.70.54 (2024-02-26)
 - Added new field `rackbeatAgreementNumber` to `LogisticsSettingsDTO`
 
