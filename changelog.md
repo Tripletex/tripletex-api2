@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.70.56 (2024-03-14)
+- Added new endpoint '/ledger/postingRules'.  The posting rules defined which accounts from the chart of accounts that are used for postings when the system creates postings. In this version the id of the sub ledgers (customer, vendor, employee) are exposed, and only GET is supported.
+
 ## 2.70.55 (2024-03-12)
 - New field in `OrderLine` object called `orderedQuantity`, that can be used by the Logistics customers who have the Backorder functionality activated 
 
