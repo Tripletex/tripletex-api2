@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.70.57 (2024-04-10)
+- Add new field `isPicked` in OrderLineDTO
+- Pick and unpick orderLines based on `status` from OrderDTO. PICKED status - will pick all of the lines and CANCELLED  status - will unpick all of the lines 
+
 ## 2.70.56 (2024-03-14)
 - Added new endpoint '/ledger/postingRules'.  The posting rules defined which accounts from the chart of accounts that are used for postings when the system creates postings. In this version the id of the sub ledgers (customer, vendor, employee) are exposed, and only GET is supported.
 
