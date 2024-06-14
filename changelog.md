@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.70.58 (2024-06-13)
-- Added new method to /currency endpoint. Returns the amount in the company currency, where the input amount is in fromCurrency, using the newest exhange rate available for the given date
+- Added new method to `/currency` endpoint. Returns the amount in the company currency, where the input amount is in fromCurrency, using the newest exhange rate available for the given date
 
 ## 2.70.57 (2024-04-10)
 - Add new field `isPicked` in OrderLineDTO
