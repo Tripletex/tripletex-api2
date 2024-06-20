@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.1 (2024-06-20)
+- Add new read-only field `isProxy` to `EmployeeDTO`
+
 ## 2.71.0 (2024-06-17)
 - Added two new endpoints for Logistics Basic customers who activated the Available inventory functionality
 - `PUT /order/orderline/{id}/:pickLine`
