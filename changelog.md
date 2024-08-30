@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.2 (2024-08-30)
+- Added new fields to the DTO returned by GET /ledger/postingRules.  These attributes shows if multiple industries are activated in the Tripletex account (this is needed for having both the general and the primary VAT report, and for some tax reporting purposes), as well as what the default business activity type is when multiple industries are activated.  
+
 ## 2.71.1 (2024-06-20)
 - Add new read-only field `isProxy` to `EmployeeDTO`
 
