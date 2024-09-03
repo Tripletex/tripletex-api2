@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.71.3 (2024-09-03)
+- Added new read only attribute 'businessActivityTypeId' to the DepartmentDTO. A posting done with a given departmentId, will belong to the business activity type defined on the department. See 'defaultBusinessActivityTypeId' in the /ledger/PostingRules endpoint for behaviour when 'businessActivityTypeId' is not defined on the department.
+- Added new endpoint yearEnd/enumType/businessActivityTypes.  This provides the list of business activity types.  These are used to classify accounting data for tax reporting purposes, and also to separate between general and primary VAT reports
+
 ## 2.71.2 (2024-08-30)
 - Added new fields to the DTO returned by GET /ledger/postingRules.  These attributes shows if multiple industries are activated in the Tripletex account (this is needed for having both the general and the primary VAT report, and for some tax reporting purposes), as well as what the default business activity type is when multiple industries are activated.  
 
