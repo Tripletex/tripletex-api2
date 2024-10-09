@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.73.4 (2024-10-09)
+- Added new postingRule `accountRoundDiffId` to postingRules endpoint.
+
 ## 2.71.3 (2024-09-03)
 - Added new read only attribute 'businessActivityTypeId' to the DepartmentDTO. A posting done with a given departmentId, will belong to the business activity type defined on the department. See 'defaultBusinessActivityTypeId' in the /ledger/PostingRules endpoint for behaviour when 'businessActivityTypeId' is not defined on the department.
 - Added new endpoint yearEnd/enumType/businessActivityTypes.  This provides the list of business activity types.  These are used to classify accounting data for tax reporting purposes, and also to separate between general and primary VAT reports
