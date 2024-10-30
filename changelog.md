@@ -1,6 +1,9 @@
 # API changelog
 
-## 2.73.4 (2024-10-09)
+## 2.71.5 (2024-10-30)
+- Supplier endpoint to support `language` setting and getting just like customer endpoint
+
+## 2.71.4 (2024-10-09)
 - Added new postingRule `accountRoundDiffId` to postingRules endpoint.
 
 ## 2.71.3 (2024-09-03)
