@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.71.6 (2024-11-25)
+- Allowing to use already existing deliveryAddresses on `POST /customer` and `PUT /customer/{id}`. 
+- Added `customerVendor` field to the `DeliveryAddressDTO`.
+
 ## 2.71.5 (2024-10-30)
 - Supplier endpoint to support `language` setting and getting just like customer endpoint
 
