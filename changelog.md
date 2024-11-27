@@ -1,9 +1,9 @@
 # API changelog
 
 ## 2.71.7 (2024-11-27)
-  -Changes to PUT `/invoice/{id}/:createReminder`
-    -Added query parameters - `dispatchTypes` , `email` , `address`, `postalCode` and `city`
-    -Deprecated query parameter - `dispatchType`
+  - Changes to PUT `/invoice/{id}/:createReminder`
+    - Added query parameters - `dispatchTypes` , `email` , `address`, `postalCode` and `city`
+    - Deprecated query parameter - `dispatchType`
 
 ## 2.71.6 (2024-11-25)
 - Allowing to use already existing deliveryAddresses on `POST /customer` and `PUT /customer/{id}`. 
