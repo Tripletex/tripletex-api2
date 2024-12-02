@@ -1,9 +1,8 @@
 # API changelog
 
 ## 2.71.8 (2024-12-02)
-Added new endpoint:
-- `PUT /inventory/stocktaking/productline/{id}/:changeLocation`
-This endpoint allows updating the location of an order line during the stocktaking process.
+- Added new endpoint:
+  - `PUT /inventory/stocktaking/productline/{id}/:changeLocation` .This endpoint allows updating the location of an order line during the stocktaking process.
 
 
 ## 2.71.7 (2024-11-27)
