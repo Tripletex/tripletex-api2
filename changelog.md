@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.71.9 (2025-01-17)
+- Changes to `POST /customer` and `PUT /customer/{id}/`
+  - Allow updating `isInactive` on `CustomerDTO` 
+- Changes to `POST /supplier` and `PUT /supplier/{id}/`
+  - Allow updating `isInactive` on `SupplierDTO`
+
 ## 2.71.8 (2024-12-02)
 - Added new endpoint:
   - `PUT /inventory/stocktaking/productline/{id}/:changeLocation` .This endpoint allows updating the location of an order line during the stocktaking process.
