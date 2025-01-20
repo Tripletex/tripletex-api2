@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.10 (2025-01-20)
+- Added `deliveryComment` parameter to search for orders in `GET order`
+
 ## 2.71.9 (2025-01-17)
 - Changes to `POST /customer` and `PUT /customer/{id}/`
   - Allow updating `isInactive` on `CustomerDTO` 
