@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.71.11 (2025-01-23)
+- Changes to `POST /customer` and `PUT /customer/{id}/`.
+  - Add possibility to include/update `invoiceSMSNotificationNumber`  on `CustomerDTO`
+- Changes to `POST /order` and `PUT /order/{id}`.
+  - Allow updating `invoiceSMSNotificationNumber` on `OrderDTO`
+
 ## 2.71.10 (2025-01-20)
 - Added `deliveryComment` parameter to search for orders in `GET order`
 
