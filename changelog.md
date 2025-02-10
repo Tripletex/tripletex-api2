@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.12 (2025-02-07)
+- Added new read-only field `isRoundPriceIncVat` to `ProductDTO`
+
 ## 2.71.11 (2025-01-23)
 - Changes to `POST /customer` and `PUT /customer/{id}/`.
   - Add possibility to include/update `invoiceSMSNotificationNumber`  on `CustomerDTO`
