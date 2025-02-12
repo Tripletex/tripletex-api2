@@ -1,8 +1,5 @@
 # API changelog
 
-## 2.71.13 (2025-02-12)
-- Changes to `token/session:create` add extra validation so `expirationDate` won't be longer than 6 months
-
 ## 2.71.12 (2025-02-07)
 - Added new read-only field `isRoundPriceIncVat` to `ProductDTO`
 
