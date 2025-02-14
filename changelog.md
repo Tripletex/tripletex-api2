@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.13 (2025-02-14)
+- Added new read-only field `hasWholesalerExportUser` to `PurchaseOrderDTO` available only on demand to check if wholesaler supplier has integration credentials
+
 ## 2.71.12 (2025-02-07)
 - Added new read-only field `isRoundPriceIncVat` to `ProductDTO`
 
