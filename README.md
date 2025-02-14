@@ -13,7 +13,6 @@
 
 - [General](https://developer.tripletex.no/docs/documentation/)
 - [Webhooks](docs/webhooks)
-- [Zapier app (beta)](docs/zapier)
 - [Checksum](examples/bash/checksum)
 
 ## Code examples
