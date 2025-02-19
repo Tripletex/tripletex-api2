@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.14 (2025-02-19)
+- Added a new field `customSortIndex` to `PurchaseOrderlineDTO` to support custom sorting of purchase order lines using a non-negative integer.
+
 ## 2.71.13 (2025-02-14)
 - Added new read-only field `hasWholesalerExportUser` to `PurchaseOrderDTO` available only on demand to check if wholesaler supplier has integration credentials
 
