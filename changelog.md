@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.71.15 (2025-02-19)
+Changes to `POST /order`, `PUT /order`, `POST /order/orderline` and `PUT /order/orderline`
+- Automatically calculate `unitPriceIncludingVatCurrency` if only `unitPriceExcludingVatCurrency` is provided
+- Automatically calculate `unitPriceExcludingVatCurrency` if only `unitPriceIncludingVatCurrency` is provided
+
 ## 2.71.14 (2025-02-19)
 - Added a new field `customSortIndex` to `PurchaseOrderlineDTO` to support custom sorting of purchase order lines using a non-negative integer.
 
