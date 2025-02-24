@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.16 (2025-02-24)
+- `unitPriceExcludingVatCurrency` and `unitPriceIncludingVatCurrency` on OrderLine are not rounded to 2 decimals every time anymore, the fields support up to 10 decimals. 
+
 ## 2.71.15 (2025-02-19)
 Changes to `POST /order`, `PUT /order`, `POST /order/orderline` and `PUT /order/orderline`
 - Automatically calculate `unitPriceIncludingVatCurrency` if only `unitPriceExcludingVatCurrency` is provided
