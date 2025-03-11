@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.71.16 (2025-03-11)
+- Changes to `PUT {id}/:createCreditNote`
+  - Deprecate `sendToCustomer`
+  - Added `sendType` query parameter
+
 ## 2.71.16 (2025-02-24)
 - `unitPriceExcludingVatCurrency` and `unitPriceIncludingVatCurrency` on OrderLine are not rounded to 2 decimals every time anymore, the fields support up to 10 decimals. 
 
