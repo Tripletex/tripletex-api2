@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.71.17 (2025-03-12)
+- Deprecated `GET /timesheet/month/byMonthNumber`
+- Added `GET /timesheet/month/byMonthNumbeList` as replacement
+
 ## 2.71.16 (2025-03-11)
 - Changes to `PUT {id}/:createCreditNote`
   - Deprecate `sendToCustomer`
