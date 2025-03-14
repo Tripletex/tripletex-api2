@@ -1,6 +1,9 @@
 # API changelog
 
-## 2.71.16 (2025-03-11)
+## 2.71.18 (2025-03-14)
+- Added a new field `orderLineSorting` to `PurchaseOrderDTO` to allow sorting of order lines within a purchase order.
+
+## 2.71.17 (2025-03-11)
 - Changes to `PUT {id}/:createCreditNote`
   - Deprecate `sendToCustomer`
   - Added `sendType` query parameter
