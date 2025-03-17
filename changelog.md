@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.71.19 (2025-03-17)
+- We have moved our api test environment! Our old environment was at `api.tripletex.io`, this environment has been discontinued and deprecated. Please move over to our new environment at `api-test.tripletex.tech`.
+- Added HMAC support for delivering webhooks.
+  - When posting a new webhook subscription, set a shared secret in the `hmacSharedSecret`.
+  - If a shared hmac secret is set we will sign webhook payloads with a HMAC-SHA512 signature.
+  - Calculation is `header('x-request-signature') = base64(HmacSHA512(header('idempotency-key') + '&' + body))`
+
 ## 2.71.18 (2025-03-14)
 - Added a new field `orderLineSorting` to `PurchaseOrderDTO` to allow sorting of order lines within a purchase order.
 
