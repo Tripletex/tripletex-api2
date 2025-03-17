@@ -14,7 +14,7 @@ employeeToken="*** CHANGE ME ***"
 apiHost="https://tripletex.no"
 
 # Uncomment the line below if you are using the integration environment
-# apiHost="https://api.tripletex.io"
+# apiHost="https://api-test.tripletex.tech"
 
 # Used to perform API requests in a different company context (e.g. accountant access)
 # Default value "0" is used to act as your primary company
