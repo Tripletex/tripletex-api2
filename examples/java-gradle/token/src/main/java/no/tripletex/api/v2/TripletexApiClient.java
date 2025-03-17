@@ -22,7 +22,7 @@ import java.util.Map;
 public class TripletexApiClient extends ApiClient {
 
     public static final String PRODUCTION_BASE_PATH = "https://tripletex.no/v2";
-    public static final String TEST_BASE_PATH = "https://api.tripletex.io/v2";
+    public static final String TEST_BASE_PATH = "https://api-test.tripletex.tech/v2";
 
     private static final TemporalAmount TIME_TO_LIVE_API_TOKEN = Period.ofDays(1);
     private static final ZoneId DEFAULT_ZONE_ID = ZoneId.systemDefault();
