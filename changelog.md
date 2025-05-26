@@ -1,7 +1,7 @@
 # API changelog
 
 ## 2.71.20 (2025-05-26)
-- Added a new fields `purchasePriceCurrency` to get the product price in currency (affects supplier products) and `priceInTarget currency` to get product price in specific currency to `PurchaseDTO`.
+- Added a new fields `purchasePriceCurrency` to get the product price in currency (affects supplier products) and `priceInTarget currency` to get product price in specific currency to `ProductDTO`.
 
 ## 2.71.19 (2025-03-17)
 - We have moved our api test environment! Our old environment was at `api.tripletex.io`, this environment has been discontinued and deprecated. Please move over to our new environment at `api-test.tripletex.tech`.
