@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.71.30 (2025-06-02)
+- Added new structure 'specificationSupplement' to the 'specification' of the 'payslip' of the salary transaction, with fields 'carRegNumber' and 'carListPrice' to allow for salary types that require this information.
+
 ## 2.71.20 (2025-05-26)
 - Added a new fields `purchasePriceCurrency` to get the product price in currency (affects supplier products) and `priceInTarget currency` to get product price in specific currency to `ProductDTO`.
 
