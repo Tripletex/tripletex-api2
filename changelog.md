@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.71.40 (2025-06-17)
+- Added new endpoint `GET /ledger/postingByDate` for retrieving postings by date range with pagination. This endpoint provides better performance than the standard `/ledger/posting` endpoint for date-based queries.
+  - Requires access to all vouchers
+  - If access control for salary information is activated, also requires access to wage info
+  - Parameters: `dateFrom` (required), `dateTo` (required), `count` (optional)
+  - Does not support `fields` or `changes` parameters
+  - Returns the same `PostingDTO` structure as `/ledger/posting`
+
 ## 2.71.30 (2025-06-02)
 - Added new structure 'specificationSupplement' to the 'specification' of the 'payslip' of the salary transaction, with fields 'carRegNumber' and 'carListPrice' to allow for salary types that require this information.
 
