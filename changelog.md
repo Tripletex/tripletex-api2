@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.72.00 (2025-06-10)
+- Migrated over to OpenAPI v3 (from Swagger v2).
+  - Our specification has moved to https://tripletex.no/v2/openapi.json
+  - All modern up to date code generators should work out of the box with the new version of the specification.
+  - Expect some minor non-semantic changes
+
 ## 2.71.40 (2025-06-17)
 - Added new endpoint `GET /ledger/postingByDate` for retrieving postings by date range with pagination. This endpoint provides better performance than the standard `/ledger/posting` endpoint for date-based queries.
   - Requires access to all vouchers
