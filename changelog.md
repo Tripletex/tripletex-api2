@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.72.01 (2025-08-01)
+- Added new endpoint:
+  - `GET /transportType` which allows customers to search the transport type for a purchase order by supplier.
+
 ## 2.72.00 (2025-06-10)
 - Migrated over to OpenAPI v3 (from Swagger v2).
   - Our specification has moved to https://tripletex.no/v2/openapi.json
