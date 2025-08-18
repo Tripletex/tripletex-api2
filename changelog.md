@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.72.02 (2025-08-18)
+- Added new endpoint:
+  - `GET /voucherInbox/inboxCount` to get numbers of items in the voucher inbox.
+
 ## 2.72.01 (2025-08-01)
 - Added new endpoint:
   - `GET /transportType` which allows customers to search the transport type for a purchase order by supplier.
