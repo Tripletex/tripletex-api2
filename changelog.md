@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.72.03 (2025-08-26)
+- Added new field "Asset" to the PostingDTO:
+  - Asset represents fixed assets as used in the Fixed asset register ("Eiendel" i Anleggsregisteret). PostingDTO is used in endpoints like /ledger/voucher, /legder/posting etc.  Existing endpoint `GET /asset/{id}/postings` can be used to fetch postings connected to a specific asset. 
+
 ## 2.72.02 (2025-08-18)
 - Added new endpoint:
   - `GET /voucherInbox/inboxCount` to get numbers of items in the voucher inbox.
