@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.72.05 (2025-09-11)
+- Changes to `PUT /v2/contact` anf `POST /v2/contact`
+  - Possible to edit `isInactive` field.
+
 ## 2.72.03 (2025-08-26)
 - Added new field "Asset" to the PostingDTO:
   - Asset represents fixed assets as used in the Fixed asset register ("Eiendel" i Anleggsregisteret). PostingDTO is used in endpoints like /ledger/voucher, /legder/posting etc.  Existing endpoint `GET /asset/{id}/postings` can be used to fetch postings connected to a specific asset. 
