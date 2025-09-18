@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.72.06 (2025-09-18)
+- Added PUT ​/ledger​/posting​/:closePostings to closing postings.
+
+## 2.72.05 (2025-09-15)
+- Added freeAccountingDimension1, freeAccountingDimension2, freeAccountingDimension3 to PostingDTO object. This will contain free dimension values and is currently read-only.
+
 ## 2.72.05 (2025-09-11)
 - Changes to `PUT /v2/contact` anf `POST /v2/contact`
   - Possible to edit `isInactive` field.
