@@ -2,7 +2,7 @@
 
 **Tripletex WebHook's supports a growing number of internal events for your integrations to subscribe to.**
 
-You can see the API2 endpoints for managing your WebHook subscriptions under **/event** and **/event/subscription** in the [swagger doc](https://tripletex.no/v2-docs/new).
+You can see the API2 endpoints for managing your WebHook subscriptions under **/event** and **/event/subscription** in the [OpenAPI doc](https://tripletex.no/v2-docs/).
 
 ## List currently available events
 
