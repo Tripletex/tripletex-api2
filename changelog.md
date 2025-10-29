@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.72.07 (2025-10-29)
+- Added `minStockLevel` field to `ProductDTO` for stock items in the Logistics Basics module.
+
 ## 2.72.06 (2025-09-18)
 - Added PUT ​/ledger​/posting​/:closePostings to closing postings.
 
