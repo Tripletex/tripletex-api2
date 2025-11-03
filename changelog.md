@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.73 (2025-11-03)
+- Added new endpoints for free accounting dimensions (aka 'user defined dimensions').  These are available for customers with the Pro package or above, but not for Smart or Basis. 
+  - AccountingDimensionName: this represents a dimension that you create, it contains the name of the dimension and some other attributes.  You can create up to 3 dimensions,     identified by index 1, 2 and 3.  When you create a dimension, it's always given the next available index, up to the 3 allowed
+  - AccountingDimensionValue: this represents the values that you can choose for each dimension.
+  - The API key must have the role "Regnskapsinnstillinger, kontoplan og historisk balanse" / "Accounts settings, chart of accounts and historical balance" to do POST or PUT against these endpoints.  Reading the values does not require any special roles.
+  - If free dimensions are used when booking a voucher, this will be visible as freeAccountingDimension1, freeAccountingDimension2, freeAccountingDimension3 in the PostingDTO.  These are now writeable, so they can be used in for instance POST /ledger/voucher when crating vouchers from the API (see release note for version 2.72.05)
+  - These are also available for filtering in GET /ledger/posting
+
 ## 2.72.07 (2025-10-29)
 - Added `minStockLevel` field to `ProductDTO` for stock items in the Logistics Basics module.
 
