@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.73.01 (2025-11-04)
+- Added `vendor` field to `OrderlineDTO` for wholesaler information.
+
 ## 2.73 (2025-11-03)
 - Added new endpoints for free accounting dimensions (aka 'user defined dimensions').  These are available for customers with the Pro package or above, but not for Smart or Basis. 
   - AccountingDimensionName: this represents a dimension that you create, it contains the name of the dimension and some other attributes.  You can create up to 3 dimensions,     identified by index 1, 2 and 3.  When you create a dimension, it's always given the next available index, up to the 3 allowed
