@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.73.02 (2025-11-07)
+- Added `voucher` field to `ProjectOrderLineDTO`, which is for vouchers that order lines are connected to, whose numbers are visible in the project order line tab in the GUI.
+
 ## 2.73.01 (2025-11-04)
 - Added `vendor` field to `OrderlineDTO` for wholesaler information.
 
