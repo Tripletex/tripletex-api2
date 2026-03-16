@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.75.00 (2026-03-16)
+GET endpoints for discount policy (/discountPolicy) are now available for companies with Logistics Basis or Wholesaler integration activated.
+
 ## 2.74.00 (2025-12-03)
 - Added new endpoint '/ledger/vatSettings' with GET and PUT method for reading and updating the VAT settings of the currently logged in company.  Supported setting now is 'vatRegistrationStatus' (both read and update).  This is the status for the company's registration in the Norwegian VAT register ('Merverdiavgiftsregisteret').
 - Possible values for the registration status are: VAT_NOT_REGISTERED (not registered in Merverdiavgiftsregisteret), VAT_APPLICANT (application to be registered has been sent to Merverdiavgiftsregisteret, VAT_REGISTERED (registered), VAT_COMPENSATION (a special case of registered, where VAT compensation will be used)
