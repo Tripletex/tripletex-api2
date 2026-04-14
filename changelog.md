@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.75.01 (2026-04-14)
+- Product now gets next number from number series if applicable (companies with Logistics Basis).
+
 ## 2.75.00 (2026-03-16)
 - GET endpoints for discount policy (/discountPolicy) are now available for companies with Logistics Basis or Wholesaler integration activated.
 
