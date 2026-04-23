@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.75.02 (2026-04-23)
+- Added new fields 'requiresFreeDimension1', 'requiresFreeDimension2' and 'requiresFreeDimension3' to Account.  If 'true', all postings on the account must have a value set for the given free dimension.  The free dimension must be defined, and be active in Tripletex, before it can be set as required on an account.  The fields can also be updated from the API (POST or PUT /ledger/account)
+
 ## 2.75.01 (2026-04-14)
 - Product now gets next number from number series if applicable (companies with Logistics Basis).
 
