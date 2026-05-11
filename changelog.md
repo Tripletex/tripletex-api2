@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.75.03 (2026-05-11)
+- Added new webhook events for CloseGroup:
+  - `closeGroup.create` — Fired when a closeGroup is created (postings are matched/closed). Payload includes the closed postings. Note: this also fires on automatic close actions, e.g. OCR matching of incoming payments.
+  - `closeGroup.delete` — Fired when a closeGroup is deleted (postings reopened). Payload contains only the closeGroup id (value is null). Consumers should retain the postings list from the matching closeGroup.create event to know which postings were reopened.
+
 ## 2.75.02 (2026-04-23)
 - Added new fields 'requiresFreeDimension1', 'requiresFreeDimension2' and 'requiresFreeDimension3' to Account.  If 'true', all postings on the account must have a value set for the given free dimension.  The free dimension must be defined, and be active in Tripletex, before it can be set as required on an account.  The fields can also be updated from the API (POST or PUT /ledger/account)
 
