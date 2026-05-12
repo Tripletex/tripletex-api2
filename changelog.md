@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.75.04 (2026-05-12)
+- The Endpoint /ledger/vatSettings now lets you activate and de-activate different groups of VAT-codes. See documentation for each individual setting for which codes they activated / deactivate.  
+  - Activation means that the codes become included in dropdowns for choosing VAT code inside the application, and in API queries to get available VAT-codes for different purposes.
+  - Deactivation means that the codes are not included in these scenarios.
+
 ## 2.75.03 (2026-05-11)
 - Added new webhook events for CloseGroup:
   - `closeGroup.create` — Fired when a closeGroup is created (postings are matched/closed). Payload includes the closed postings. Note: this also fires on automatic close actions, e.g. OCR matching of incoming payments.
@@ -30,7 +35,7 @@
   - AccountingDimensionName: this represents a dimension that you create, it contains the name of the dimension and some other attributes.  You can create up to 3 dimensions,     identified by index 1, 2 and 3.  When you create a dimension, it's always given the next available index, up to the 3 allowed
   - AccountingDimensionValue: this represents the values that you can choose for each dimension.
   - The API key must have the role "Regnskapsinnstillinger, kontoplan og historisk balanse" / "Accounts settings, chart of accounts and historical balance" to do POST or PUT against these endpoints.  Reading the values does not require any special roles.
-  - If free dimensions are used when booking a voucher, this will be visible as freeAccountingDimension1, freeAccountingDimension2, freeAccountingDimension3 in the PostingDTO.  These are now writeable, so they can be used in for instance POST /ledger/voucher when crating vouchers from the API (see release note for version 2.72.05)
+  - If free dimensions are used when booking a voucher, this will be visible as freeAccountingDimension1, freeAccountingDimension2, freeAccountingDimension3 in the PostingDTO.  These are now writeable, so they can be used in for instance POST /ledger/voucher when creating vouchers from the API (see release note for version 2.72.05)
   - These are also available for filtering in GET /ledger/posting
 
 ## 2.72.07 (2025-10-29)
