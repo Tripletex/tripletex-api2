@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.75.05 (2026-05-15)
+- Added new optional query parameter `addToInvoiceMode` to `PUT /order/{id}/:attach`. Controls which invoices receive the uploaded attachment.
+  - `NEXT` (default) — only the next invoice. Legacy behavior; existing callers see no change.
+  - `ALL` — every invoice produced from the order. Intended for recurring orders, where the document is included on each generated invoice.
+  - `NONE` — stored against the order as documentation only; not added to any invoice.
+
 ## 2.75.04 (2026-05-12)
 - The Endpoint /ledger/vatSettings now lets you activate and de-activate different groups of VAT-codes. See documentation for each individual setting for which codes they activated / deactivate.  
   - Activation means that the codes become included in dropdowns for choosing VAT code inside the application, and in API queries to get available VAT-codes for different purposes.
