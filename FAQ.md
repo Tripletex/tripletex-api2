@@ -26,6 +26,18 @@ If you want the orderlines related to the order as well you can expand the API r
 
 ---
 
+### How can I make `/ledger/posting/openPost` faster on accounts with many postings?
+
+#### Answer:
+
+`GET /v2/ledger/posting/openPost` returns the open postings on an account as of a given date. By default the result is sorted by voucher (year and number), which becomes expensive on accounts that have a large number of postings.
+
+If you do not need the voucher ordering, add `sorted=false` to the request. You get the exact same set of open postings, only unordered, and the response is significantly faster on large accounts. For best performance, combine it with the `fields` parameter (see above) to limit the returned data, and with paging (`from` and `count`).
+
+Example: `GET /v2/ledger/posting/openPost?date=2026-12-31&accountId=123456&sorted=false&fields=id,date,amount,invoiceNumber&count=1000`
+
+---
+
 ### How can I correct the validation message “The unit price must be exclusive VAT since the unit price on the order is exclusive VAT.”
 
 #### Answer:

@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.75.06 (2026-06-23)
+- Added new optional query parameter `sorted` to `GET /ledger/posting/openPost`.
+  - `true` (default) — open postings are returned ordered by voucher (year, then number). Existing callers see no change.
+  - `false` — returns the same set of open postings, unordered. Significantly faster on accounts with a large number of postings, since the sort is skipped. Recommended when reading large accounts where you do not depend on the voucher ordering.
+
 ## 2.75.05 (2026-05-15)
 - Added new optional query parameter `addToInvoiceMode` to `PUT /order/{id}/:attach`. Controls which invoices receive the uploaded attachment.
   - `NEXT` (default) — only the next invoice. Legacy behavior; existing callers see no change.
