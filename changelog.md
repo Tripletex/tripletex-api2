@@ -1,5 +1,8 @@
 # API changelog
 
+## 2.75.06 (2026-07-02)
+- Removed read only field hasWholesalerExportUser from PurchaseOrderDTO
+
 ## 2.75.05 (2026-05-15)
 - Added new optional query parameter `addToInvoiceMode` to `PUT /order/{id}/:attach`. Controls which invoices receive the uploaded attachment.
   - `NEXT` (default) — only the next invoice. Legacy behavior; existing callers see no change.
