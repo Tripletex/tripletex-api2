@@ -1,5 +1,14 @@
 # API changelog
 
+## 2.75.07 (2026-07-03)
+- Changes to `/project/subcontract`:
+  - Added `supplier` field to `ProjectSubContractDTO`. Required when creating a sub-contract; must reference a supplier. This makes it possible to create sub-contracts via the API.
+  - `project` is now validated on create and update: required and must reference an existing project.
+  - `project` and `supplier` are included in responses by default (as id + url).
+  - `displayName` is now read-only.
+  - Removed the unused read-only field `company` from `ProjectSubContractDTO`.
+  - `DELETE` now fails if the sub-contract has order lines connected to it. The project can no longer be changed while order lines are connected.
+  
 ## 2.75.06 (2026-07-02)
 - Removed read only field hasWholesalerExportUser from PurchaseOrderDTO
 
