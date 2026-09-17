@@ -1,5 +1,15 @@
 # API changelog
 
+## 2.75.11 (2026-09-17)
+- Added new optional query parameter `isInactive` to `GET /employee`. Filters on the employee's inactive flag.
+  - Omitted (default) — no filtering. Existing callers see no change.
+  - `true` — only inactive employees/contacts. `false` — only active ones.
+  - The parameter filters on the flag alone. Unlike the same-named parameter on `GET /employee/searchForEmployeesAndContacts`, it is **not** combined with the employment period, so `isInactive=false` does not additionally require the employee to be currently employed. An employee whose employment has ended, or a contact with no employment at all, is still returned.
+  - Can be combined with `allowInformationRegistration`, which was not previously possible on either endpoint.
+  - `onlyContacts=true` has always excluded inactive contacts. That remains the default, but an explicit `isInactive` now takes precedence, so `onlyContacts=true&isInactive=true` returns inactive contacts instead of an empty list. Callers that do not pass the parameter are unaffected.
+  - Note: `includeContacts=true` returns only contacts that have system access, are wage receivers, or allow information registration. `isInactive` cannot surface a plain contact there — use `onlyContacts=true`.
+  - `EmployeeDTO` does not return `isInactive`, so the flag can be filtered on but not read back.
+
 ## 2.75.10 (2026-09-07)
   - Added `includeCommonAttachments` to `OrderDTO`. Controls whether the company-wide standard invoice attachments
   (defined in Invoice Settings) are carried onto invoices created from this order.
