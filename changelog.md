@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.75.12 (2026-09-28)
+- Added parameters for filtering on multiple values for a search criteria to the GET /balanceSheet endpoint. New parameters 'customerIds', 'employeeIds', 'departmentIds', 'projectIds', 'freeDimension1', 'freeDimension2' and 'freeDimension3' all takes a list of IDs. This can for instance be used to build a combined balance sheet for two or more departments.
+	- The existing, single value, search fields are kept for backward compatibility.  If both the new and old parameters are given values, these will be combined into a unified list of IDs for the search.
+
+- Added new parameter 'convertFromAmountGrossCurrency' to POST  /ledger/voucher.  If true, Tripletex will calculate amountGross from amountGrossCurrency, using the newest exchange rate available for the posting date, or the voucher date when the posting carries none. Only affects postings in a foreign currency that do not supply amountGross - a supplied amountGross is always used as is.
+  
 ## 2.75.11 (2026-09-17)
 - Added new optional query parameter `isInactive` to `GET /employee`. Filters on the employee's inactive flag.
   - Omitted (default) — no filtering. Existing callers see no change.
