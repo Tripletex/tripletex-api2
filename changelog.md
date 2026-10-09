@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.75.14 (2026-10-09)
+
+- The attributes `requiresProject` and `requiresDepartment` on Account, are no longer read only, but can now be updated from the API (POST or PUT /ledger/account).  If set to true, all postings on the account must have a value set for project or department respectively.
+
 ## 2.75.13 (2026-10-02)
 - Added new optional query parameter `changedSince` to `GET /product`. Returns only products created or updated since the given time, so sync integrations can fetch deltas instead of the whole catalog.
   - Requires an ISO-8601 timestamp with a timezone offset (`2026-09-26T08:00:00Z`); without one the request is rejected with 422, and a `+` offset must be sent as `%2B`.
