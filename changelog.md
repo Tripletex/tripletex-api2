@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.75.15 (2026-10-12)
+
+- Added new parameter `importFreeDimensions` to POST /saft/importSAFT - the endpoint for importing SAF-T files into the Tripletex account.  This is parallel to the existing `importDepartments` and `importProjects` parameters.  Only has effect for SAF-T version 1.3 and above, and when the Tripletex account has a package with free dimensions. Behavior:  When the description of an analysis type is the name of an active free dimension, the values are matched with the available values for this dimensjon by number, and the by name. If no match, a new value is created for the free dimension.  The matched (or created value) is used on the posting.
+
 ## 2.75.14 (2026-10-09)
 
 - The attributes `requiresProject` and `requiresDepartment` on Account, are no longer read only, but can now be updated from the API (POST or PUT /ledger/account).  If set to true, all postings on the account must have a value set for project or department respectively.
