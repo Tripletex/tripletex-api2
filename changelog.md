@@ -1,5 +1,13 @@
 # API changelog
 
+## 2.75.16 (2026-10-16)
+
+- Added new method `:anonymize` to the customer endpoint.  This can be used to anonymize customers that are private persons, and where the most recent posting date, or bank reconciliation date, is outside the retention period given in bokføringslovens § 13 (end of the accounting year plus 5 years).  
+  - All data on the customer card, and related customer data like memos, email, tasks etc. are deleted.  All accounting data involving this customer is completely anonymized.  For GDPR purposes, this is equivalent to a full deletion.
+  - This process is _not_ reversible, even the audit logs are gone. But as mentioned above, it will never anonymize or delete data that are inside the retention requirements.
+  - In the special case where a private person is also a vendor (possible for ENK), only the customer part of the accounting data is anonymized, the vendor part is kept as is.
+- Added new parameter `onlyAnonymizable` to the GET /customer method. If set to true, the search will return only customers that can be anonymized.
+
 ## 2.75.15 (2026-10-12)
 
 - Added new parameter `importFreeDimensions` to POST /saft/importSAFT - the endpoint for importing SAF-T files into the Tripletex account.  This is parallel to the existing `importDepartments` and `importProjects` parameters.  Only has effect for SAF-T version 1.3 and above, and when the Tripletex account has a package with free dimensions. Behavior:  When the description of an analysis type is the name of an active free dimension, the values are matched with the available values for this dimensjon by number, and then by name. If no match, a new value is created for the free dimension.  The matched (or created value) is used on the posting.
