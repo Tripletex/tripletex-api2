@@ -1,5 +1,11 @@
 # API changelog
 
+## 2.75.17 (2026-10-16)
+- Added read-only `isPlanned` to `InvoiceDTO`. True when the invoice was created from a project's invoicing plan, i.e. it is an instalment entered on the project's finance tab. The flag is set when the instalment is created and is never cleared, so it stays true after the invoice is charged.
+  - Lets clients tell a project's invoices apart: `isPlanned` and not `isCharged` is an instalment not yet invoiced, not `isPlanned` and not `isCharged` is the project's preliminary invoice, and on a charged invoice `isPlanned` tells whether it came from the plan.
+  - An instalment keeps the amounts entered in the plan when it is invoiced; they are not recalculated from hours and order lines.
+  - Returned wherever `InvoiceDTO` is returned, including `GET /invoice`, `GET /invoice/{id}` and the `invoicingPlan` and `preliminaryInvoice` fields on `ProjectDTO`.
+
 ## 2.75.16 (2026-10-16)
 
 - Added new method `:anonymize` to the customer endpoint.  This can be used to anonymize customers that are private persons, and where the most recent posting date, or bank reconciliation date, is outside the retention period given in bokføringslovens § 13 (end of the accounting year plus 5 years).  
