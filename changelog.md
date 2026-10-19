@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.75.18 (2026-10-19)
+
+- Improved and extended functionality of some `salary/transaction` endpoints: 
+  - `POST :createSalaryRun` the new action to create a salary should handle validation errors better and make it easier to understand when something is wrong in the request. It is recommended to use this endpoint over the old `POST salary/transaction`
+  - `PUT {id}:addPayslip` For an employee with a given employment, add a wage payment to an existing wage transaction with the given ID.
+  - `PUT {id}:addSpecification` Add a salary line to an employee's existing wage payment in an open salary transaction
+
 ## 2.75.17 (2026-10-16)
 - Added read-only `isPlanned` to `InvoiceDTO`. True when the invoice was created from a project's invoicing plan, i.e. it is an instalment entered on the project's finance tab. The flag is set when the instalment is created and is never cleared, so it stays true after the invoice is charged.
   - Lets clients tell a project's invoices apart: `isPlanned` and not `isCharged` is an instalment not yet invoiced, not `isPlanned` and not `isCharged` is the project's preliminary invoice, and on a charged invoice `isPlanned` tells whether it came from the plan.
