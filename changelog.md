@@ -7,6 +7,14 @@
 - Added new optional query parameter `approved` to `GET /timesheet/entry`. Filters on the same flag, so `approved=true` returns only approved hours and `approved=false` only hours not yet approved.
   - Omitted (default) — no filtering. Existing callers see no change.
 
+## 2.75.19 (2026-10-23)
+- `GET /vatReturns/vatDeliveryStatusUpdate/{id}` and `GET /ledger/posting/vatPaymentStatusUpdate/{id}` are now public, under the `vatReturns` tag. They are the endpoints that the `url` in the `vatDeliveryStatus.create`, `vatDeliveryStatus.update`, `vatDeliveryStatus.delete` and `vatPaymentStatus.update` webhooks points to.
+  - `vatDeliveryStatusUpdate/{id}` takes the VAT return id from a `vatDeliveryStatus.*` webhook and returns its company, year and term.
+  - `vatPaymentStatusUpdate/{id}` takes the VAT settlement posting id from a `vatPaymentStatus.update` webhook and returns the company, year and term it settles. Any other posting returns `year` and `term` as 0.
+  - Both require access to VAT returns and return 403 without it.
+  - With the year and term from the webhook, one `GET /vatReturns/status?year=&term=` gives the term's delivery and payment status, so there is no need to poll for changes.
+  - Paths, operation ids and responses are unchanged; existing callers are unaffected.
+
 ## 2.75.18 (2026-10-19)
 
 - Improved and extended functionality of some `salary/transaction` endpoints: 
