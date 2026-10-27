@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.75.20 (2026-10-27)
+- Added read-only `approved` to `TimesheetEntryDTO`. True when the hour is approved on its project («Approve hours»). Week, month and salary approval are not included; `locked` still covers those.
+  - In companies that do not use «Approve hours», hours on a project are saved as approved, so `approved` is then always true for them. Hours without a project are never approved.
+  - Returned wherever `TimesheetEntryDTO` is returned, including `GET /timesheet/entry` and `GET /timesheet/entry/{id}`.
+- Added new optional query parameter `approved` to `GET /timesheet/entry`. Filters on the same flag, so `approved=true` returns only approved hours and `approved=false` only hours not yet approved.
+  - Omitted (default) — no filtering. Existing callers see no change.
+
 ## 2.75.18 (2026-10-19)
 
 - Improved and extended functionality of some `salary/transaction` endpoints: 
