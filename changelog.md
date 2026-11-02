@@ -1,5 +1,10 @@
 # API changelog
 
+## 2.75.21 (2026-11-02)
+- Added read-only `isHistorical` to `InvoiceDTO`. True for a project's historical invoice: the sum of what was invoiced before the project came into Tripletex, entered under the project's historical information (Project → Contract → «Historical information»). It has number 0, is always charged, and creates no posting.
+  - Lets clients tell this record apart from real invoices, for example when listing a project's invoices, instead of guessing from the invoice number.
+  - Returned wherever `InvoiceDTO` is returned, including `GET /invoice` and `GET /invoice/{id}`.
+
 ## 2.75.20 (2026-10-27)
 - Added read-only `approved` to `TimesheetEntryDTO`. True when the hour is approved on its project («Approve hours»). Week, month and salary approval are not included; `locked` still covers those.
   - In companies that do not use «Approve hours», hours on a project are saved as approved, so `approved` is then always true for them. Hours without a project are never approved.
@@ -1643,3 +1648,4 @@ Returns list with all documents archive associated with an object type specified
   _ `currency`
   _ `productUnit`
   _ `isStockItem` (lagervare) \* `stockOfGoods` (lagerbeholdning)
+
