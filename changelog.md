@@ -1,5 +1,14 @@
 # API changelog
 
+## 2.75.22 (2026-11-03)
+- Added `employeeApproverRelation` to `EmployeeDTO`, with the fields `type` and `approver`. It holds the employee's immediate manager («Nærmeste leder»), so it can now be read and set through `GET`, `POST` and `PUT /employee` instead of only from the employee page.
+  - `type` decides how the immediate manager is chosen: `CUSTOM` (a named employee, given in `approver`), `DEPARTMENT_MANAGER` (the manager of the employee's department) or `NONE`.
+  - When reading, `approver` is the resolved manager, so for `DEPARTMENT_MANAGER` it is the department's manager. Use `fields=employeeApproverRelation(type,approver(*))` to expand it.
+  - `approver` can only be set when `type` is `CUSTOM`. For the other types it can be left out or sent with its current value, so a `GET` response can be sent back unchanged. Any other approver is rejected with a validation error.
+  - Leaving the field out, or sending back the current values, writes nothing. Existing callers see no change, and employees can send back their own data without needing access to change their manager.
+  - Validation: the accounting firm and API users cannot be the immediate manager, and `DEPARTMENT_MANAGER` requires the department module.
+  - The field is only returned to users who have access to see the employee's immediate manager.
+
 ## 2.75.21 (2026-11-02)
 - Added read-only `isHistorical` to `InvoiceDTO`. True for a project's historical invoice: the sum of what was invoiced before the project came into Tripletex, entered under the project's historical information (Project → Contract → «Historical information»). It has number 0, is always charged, and creates no posting.
   - Lets clients tell this record apart from real invoices, for example when listing a project's invoices, instead of guessing from the invoice number.
