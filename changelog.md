@@ -1,5 +1,12 @@
 # API changelog
 
+## 2.75.23 (2026-11-12)
+- Added new methods `/ledger/vatType/{id}/:deactivate` and `:activate` to the ledger/vatType endpoint.
+  - These methods can be used to change the activation status of the relative ('forholdsmessige') VAT types. These are initially created as 'active', but they can now be deactivated, and also re-activated again if needed.  Deactivation typically happens when the base percentage changes, and a new code with another percentage should be used instead.
+  - This only applies to the used defined relative VAT codes.  If you want to controll which of the standard VAT codes that are visible inside the system when booking vouchers, look at the `/ledger/vatSettings` endpoint instead.    
+
+- Added improved description for the field `posting.invoiceNumber`.  The API allows setting this value for all postings, but the value set is only visible inside the system for postings against the customer and supplier sub ledger.  The documentation has been updated to reflect this.  As the field is set by various integrations, we will not add any new validations here.
+
 ## 2.75.22 (2026-11-03)
 - Added `employeeApproverRelation` to `EmployeeDTO`, with the fields `type` and `approver`. It holds the employee's immediate manager («Nærmeste leder»), so it can now be read and set through `GET`, `POST` and `PUT /employee` instead of only from the employee page.
   - `type` decides how the immediate manager is chosen: `CUSTOM` (a named employee, given in `approver`), `DEPARTMENT_MANAGER` (the manager of the employee's department) or `NONE`.
