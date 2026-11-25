@@ -1,5 +1,9 @@
 # API changelog
 
+## 2.75.24 (2026-11-25)
+- `POST /saft/reverse` now returns `200 OK`, as documented, instead of `201 Created`.
+- Corrected the documented success status of `POST /ledger/voucher/{voucherId}/pdf/{fileName}`, `POST /ledger/voucher/importGbat10`, `POST /saft/importSAFT`, `POST /travelExpense/{travelExpenseId}/attachment` and `POST /travelExpense/{travelExpenseId}/attachment/list` from `200` to `201 Created`, which is what they have always returned. Their responses are unchanged.
+
 ## 2.75.23 (2026-11-12)
 - Added new methods `/ledger/vatType/{id}/:deactivate` and `:activate` to the ledger/vatType endpoint.
   - These methods can be used to change the activation status of the relative ('forholdsmessige') VAT types. These are initially created as 'active', but they can now be deactivated, and also re-activated again if needed.  Deactivation typically happens when the base percentage changes, and a new code with another percentage should be used instead.
